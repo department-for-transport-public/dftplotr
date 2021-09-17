@@ -7,7 +7,7 @@
 extractColours(...)
 }
 \arguments{
-\item{...}{Character names of colours in palette}
+\item{...}{Individual character names of colours in palette}
 }
 \description{
 Function to extract palette colours as hex codes

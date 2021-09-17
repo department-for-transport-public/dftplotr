@@ -4,7 +4,7 @@
 \alias{displayPalette}
 \title{Launch DfT palette picker tool}
 \usage{
-displayPalette(palette, gradient = FALSE)
+displayPalette(palette, gradient = FALSE, n = 5)
 }
 \description{
 Displays a visual colour chart of a selected palette
