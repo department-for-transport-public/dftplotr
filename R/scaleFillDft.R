@@ -1,10 +1,10 @@
 scale_fill_dft <- function(palette = "main.palette", gradient = FALSE, ...) {
-  pal <- unname(dft.palettes[[palette]])
 
   if (gradient) {
-    gradient_col <- colorRampPalette(colors = c(pal[1], pal[4]))
-    scale_fill_manual(values = gradient_col(10))
+    pal <- unname(extractGradient(colours = palette, n = n))
   } else {
-    scale_fill_manual(values = pal)
+    pal <- unname(dft.palettes[[palette]])
+
   }
+  scale_fill_manual(values = pal)
 }
