@@ -6,6 +6,10 @@ name_lookup <- data.table::as.data.table(readRDS("name_lookup.rds"))
 name_list <- as.list(name_lookup$Hex)
 names(name_list) <- name_lookup$Hue
 
+##Create dummy dataframe
+df <- data.frame(dose=c("D0.5", "D1", "D2", "D3", "D4"),
+                 len=c(4.2, 10, 16, 23.4, 27.2))
+
 # Define server logic required to draw a histogram
 shinyServer(function(input, output, session) {
 
@@ -15,7 +19,7 @@ shinyServer(function(input, output, session) {
   custom_palette <- reactive({
 
    palette <- c(input$colour_1, input$colour_2, input$colour_3,
-                input$colour_4)
+                input$colour_4, input$colour_5)
 
    #Remove empty values
    palette[palette != ""]
@@ -92,11 +96,21 @@ shinyServer(function(input, output, session) {
                 selected = "")
   })
 
+  ##Dynamic selectise options
+  output$select_5 <- renderUI({
+
+    ##Select colours that should be available
+    cols <- unique(raw_palette[(a_hex == input$colour_4 & ratio >= input$accessibility) & !b_hex %in% c(input$colour_1, input$colour_2, input$colour_3), b_hex])
+
+    selectInput("colour_5",
+                "Pick additional colours:",
+                choices = c("", name_list[name_list %in% cols]),
+                selected = "")
+  })
+
   #Example bar chart
   output$bar_chart_example <- renderPlot({
 
-    df <- data.frame(dose=c("D0.5", "D1", "D2", "D3", "D4"),
-                     len=c(4.2, 10, 16, 23.4, 27.2))
     df <- head(df, length(custom_palette()))
 
    ggplot2::ggplot(df, ggplot2::aes(x=dose, y=len, fill=dose)) +
