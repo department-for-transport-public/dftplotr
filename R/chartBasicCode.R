@@ -5,7 +5,7 @@ mtcars
 ggplot(mtcars, aes(x = gear, fill = factor(am), group = am))+
   geom_bar()+
   theme_grey() +
- # scale_fill_dft()+
+ #scale_fill_dft(palette = "mountain.train")+
   theme(line = element_line(colour = "grey80"),
         panel.grid = element_blank(),
         axis.ticks = element_blank(),
