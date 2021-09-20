@@ -79,11 +79,11 @@ cycling.hills = extractColours(
 ),
 
 mountain.train = extractColours(
-  "CorporateGreen", "Lime40", "Charcoal", "Mint"
+  "CorporateGreen", "Lime40", "Charcoal", "Mint", "RedShade", "Yellow40"
 ),
 
 clear.skies = extractColours(
-  "CorporateGreen", "Lime60", "NavyBlue", "SkyBlue60"
+  "CorporateGreen", "Lime60", "NavyBlue60", "Yellow40", "SkyBlue", "LightGrey"
 )
 )
 
