@@ -1,13 +1,13 @@
 #' Displays a visual colour chart of a selected palette
 #' @export
-#' @name displayPalette
+#' @name display_palette
 #' @title Launch DfT palette picker tool
 
-displayPalette <- function(palette, gradient = FALSE, n = 5){
+display_palette <- function(palette, gradient = FALSE, n = 5){
 
   ##Select gradient or palette
   if(gradient){
-  x <- dftplotr:::extractGradient(colours = palette, n = n)
+  x <- dftplotr:::extract_gradient(colours = palette, n = n)
   }else{
   x <- dft.palettes[[palette]]
   }

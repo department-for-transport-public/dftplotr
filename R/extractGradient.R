@@ -2,10 +2,10 @@
 #'
 #' @param colours Individual names of colours to start and end gradient with, in a vector
 #' @param n Number of colours required in created gradient, as an integer. Defaults to 5.
-#' @name extractGradient
+#' @name extract_gradient
 #' @title Extract gradient of n colours as hex codes based on DfT palettes
 #'
-extractGradient <- function(colours, n = 5){
+extract_gradient <- function(colours, n = 5){
   warning("Gradient palettes do not meet accessibility requirements for publishing")
 
   ramp  <- colorRampPalette(colors = dft.gradients[[colours]])
