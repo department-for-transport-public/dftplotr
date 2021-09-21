@@ -83,7 +83,7 @@ dft.palettes <- list(
   ),
 
   clear.skies = extract_colours(
-    "CorporateGreen", "Lime60", "NavyBlue60", "Yellow40", "SkyBlue", "LightGrey"
+    "CorporateGreen", "Lime60", "NavyBlue60", "Yellow40", "SkyBlue", "Mint40"
   )
 )
 

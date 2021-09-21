@@ -42,6 +42,12 @@ The palettes and the colours in them can be seen here, or visualised within the 
 
 ## Palette picker tool
 
+The palette picker tool is a Shiny tool launched within an instance of R. This tool allows visualisation of all DfT corporate colours in two chart formats; line and bar, to allow you to build and visualise your own custom palettes.
+
+It contains options to allow you to select a WCAG 2.0 accessibility rating you require the palette to meet, and functions to show what that palette looks like in grayscale and with the most common forms of colour-blindness.
+
+This tool is ideal to facilitate building your own palettes for use in applications outside of statistical publications, while still conforming to the DfT corporate colours and GSS accessibility guidance.
+
 ## Accessibility
 
 The mojchart colour palettes aim to be accessible to those with the most common forms of colour blindness, and should also be discernable in greyscale. The standard palettes in this package have been designed to meet WCAG 2.0 accessibility guidance.
