@@ -46,3 +46,35 @@ Palette picker tool
 
 Accessibility
 -------------
+
+The mojchart colour palettes aim to be accessible to those with the most
+common forms of colour blindness, and should also be discernable in
+greyscale. The standard palettes in this package have been designed to
+meet WCAG 2.0 accessibility guidance.
+
+Four of the created palettes (`main.palette`, `electric.brights`,
+`just.beachy` and `cycling.hills`) contain four colours each, and meet
+WCAG 2.0 AAA guidance. All colours have a contrast ratio of at least
+4.5:1 to the bars adjacent to them, and alternate light and dark shades
+to further increase contrast. This is the highest standard of
+accessibility and should be used when possible.
+
+Two of the created palettes (`mountain.train` and `clear.skies`) contain
+6 colours each, and meet WCAG 2.0 AA guidance. All colours have a
+contrast ration of at least 3:1 to the bars adjacent to them, and
+alternate light and dark shades to further increase contrast. This is
+the minimum standard of accessibility required for publication and use
+should be limited to times when a larger palette is required.
+
+It is also possible to generate gradient palettes using this package,
+with colours based on the DfT corporate theme. While these palettes can
+be generated with any number of shades, there is no guarantee that the
+contrast between these colours is sufficient to meet accessibility
+standards. These palettes should only be used in very limited
+circumstances where colour is not the only means of distinguishing
+different groupings and none of the standard palettes are suitable.
+
+For line charts, it may be possible that lines with reduced contrast are
+next to each other. As a result, and in line with GSS recommendation,
+line charts should be labelled directly where possible rather than using
+a legend.
