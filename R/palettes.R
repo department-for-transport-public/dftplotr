@@ -63,28 +63,28 @@ dft.colours <- c(
 #' @examples
 dft.palettes <- list(
   main.palette = extract_colours(
-  "CorporateGreen", "Lime60", "NavyBlue", "Orange80"
-),
+    "CorporateGreen", "Lime60", "NavyBlue", "Orange80"
+  ),
 
-electric.brights = extract_colours(
-  "CorporateGreen", "Lime", "NavyBlue", "Orange"
-),
+  electric.brights = extract_colours(
+    "CorporateGreen", "Lime", "NavyBlue", "Orange"
+  ),
 
-just.beachy = extract_colours(
-  "CorporateGreen", "Yellow40", "NavyBlue80", "Mint40"
-),
+  just.beachy = extract_colours(
+    "CorporateGreen", "Yellow40", "NavyBlue80", "Mint40"
+  ),
 
-cycling.hills = extract_colours(
-  "CorporateGreen", "Lime60", "DarkGrey", "Yellow40"
-),
+  cycling.hills = extract_colours(
+    "CorporateGreen", "Lime60", "DarkGrey", "Yellow40"
+  ),
 
-mountain.train = extract_colours(
-  "CorporateGreen", "Lime40", "Charcoal", "Mint", "RedShade", "Yellow40"
-),
+  mountain.train = extract_colours(
+    "CorporateGreen", "Lime40", "Charcoal", "Mint", "RedShade", "Yellow40"
+  ),
 
-clear.skies = extract_colours(
-  "CorporateGreen", "Lime60", "NavyBlue60", "Yellow40", "SkyBlue", "LightGrey"
-)
+  clear.skies = extract_colours(
+    "CorporateGreen", "Lime60", "NavyBlue60", "Yellow40", "SkyBlue", "LightGrey"
+  )
 )
 
 #' Gradient colour palettes
@@ -97,7 +97,7 @@ clear.skies = extract_colours(
 dft.gradients <- list(
   main.palette = extract_colours(
     "CorporateGreenShade", "CorporateGreen40"
-    ),
+  ),
 
   electric.brights = extract_colours(
     "Red", "Yellow"

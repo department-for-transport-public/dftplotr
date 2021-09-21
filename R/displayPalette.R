@@ -25,7 +25,9 @@ display_palette <- function(palette, gradient = FALSE, ...){
     ggplot2::geom_col() +
     ggplot2::coord_flip() +
     ggplot2::theme_void(base_size = 13) +
+    ggplot2::ggtitle(palette) +
     ggplot2::theme(legend.position = "none",
+                   plot.title.position =  "panel",
                    axis.text.y = ggplot2::element_text(),
                    plot.margin = ggplot2::unit(c(10, 10, 10, 10), "pt")) +
     ggplot2::scale_fill_manual(values = rev(unname(x))) +

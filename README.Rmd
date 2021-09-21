@@ -1,9 +1,10 @@
 ---
-output: md_document
+output: github_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
+library(egg)
 ```
 # dftplotR
 
@@ -32,6 +33,41 @@ The package contains the following functions:
 
 
 ## Colour palettes
+
+The dftplotR package comes with 6 pre-loaded palettes. These contain colours taken from the DfT corporate colour scheme, and have also been selected to meet accessibility guidance. The two primary palettes are `main.palette`; a desaturated palette ideal for use in bar charts or other area fill charts, and `electric.brights`, a saturated palette which improves visibility in line-charts or other point colour charts. The other palettes are ideal where these palettes are not appropriate, or where variation is needed.
+
+The palettes and the colours in them can be seen here, or visualised within the package by calling `display.palette()` and the palette name.
+
+```{r, out.width = "80%", fig.align = 'center'}
+egg::ggarrange(dftplotr::display_palette("main.palette"),
+               dftplotr::display_palette("electric.brights"),
+               dftplotr::display_palette("just.beachy"),
+               dftplotr::display_palette("cycling.hills"),
+               dftplotr::display_palette("mountain.train"),
+               dftplotr::display_palette("clear.skies"),
+              ncol = 3
+)
+               
+```
+
+
+## Gradient palettes
+
+The dftplotR package also comes with 6 gradient palettes. These have defined start and end colours taken from the DfT corporate colour scheme, and will auto-generate shades between these two points to create the specified number of colours. These do not meet accessibility guidance, and should only be used when the pre-set palettes are not appropriate and colour is not conveying the primary message of the visualisation.
+
+The palettes and the colours in them can be seen here, or visualised within the package by calling `display.palette(gradient = TRUE)` and the palette name. The number of shades in the palette can be specified using the `n = ` argument, e.g. `n = 8` for a palette with 8 shades. When this argument is not used, the default number of shades is 5. Example gradient palettes with 5 shades can be seen below:
+
+```{r, out.width = "80%", fig.align = 'center', warning=FALSE}
+egg::ggarrange(dftplotr::display_palette("main.palette", gradient = TRUE),
+               dftplotr::display_palette("electric.brights", gradient = TRUE),
+               dftplotr::display_palette("just.beachy", gradient = TRUE),
+               dftplotr::display_palette("cycling.hills", gradient = TRUE),
+               dftplotr::display_palette("mountain.train", gradient = TRUE),
+               dftplotr::display_palette("clear.skies", gradient = TRUE),
+              ncol = 3
+)
+               
+```
 
 
 ## ggplot2 themes
