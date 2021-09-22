@@ -127,14 +127,15 @@ dfthemer_test <- function(plot,
                           base_size = 14,
                           base_line_size = 2){
 
-  plot +
+  list(
     dfthemer(legend_right = legend_right,
              base_family = base_family,
              base_size = base_size,
-             base_line_size = 2) +
+             base_line_size = 2),
+    scale_fill_dft(),
     ggplot2::scale_y_continuous(expand = c(0, 0),
-                                labels = scales::number_format()) +
-    expand_limits(y = 0)
+                                labels = scales::number_format()),
+    expand_limits(y = 0))
 }
 
 
@@ -144,7 +145,7 @@ line_plot <- ggplot(economics,aes(x=date, y = pop)) +
 dfthemer_test(line_plot)
 
 
-fake_grouped_time_series <- tibble(
+fake_grouped_time_series <- tibble::tibble(
   date = c(2018, 2019, 2020, 2021, 2018, 2019, 2020, 2021, 2018, 2019, 2020, 2021),
   group = c("example", "example", "example", "example", "exemple", "exemple", "exemple", "exemple", "beispiel", "beispiel", "beispiel", "beispiel"),
   number = c(200, 250, 300, 350, 250, 300, 350, 400, 400, 400, 400, 355)
@@ -159,4 +160,4 @@ line_plot_grouped <- ggplot(fake_grouped_time_series, aes(x=date, y = number, gr
 line_plot_grouped
 
 
-dfthemer_test(line_plot_grouped)
+plot + dfthemer_test()
