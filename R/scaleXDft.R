@@ -12,7 +12,7 @@ scale_fill_dft <- function(palette = "main.palette", gradient = FALSE, ...) {
 
   if (gradient) {
     ##Create a gradient based on the palette selected
-    pal <- unname(extract_gradient(colours = palette, ...))
+    pal <- unname(extract_gradient(palette = palette, ...))
   } else {
     ##Add a message to explain the accessibility of the palette chosen
     if(palette %in% c("mountain.train", "clear.skies")) {
@@ -42,7 +42,7 @@ scale_colour_dft <- function(palette = "main.palette", gradient = FALSE, ...) {
 
   if (gradient) {
     ##Create a gradient based on the palette selected
-    pal <- unname(extract_gradient(colours = palette, ...))
+    pal <- unname(extract_gradient(palette = palette, ...))
   } else {
     ##Add a message to explain the accessibility of the palette chosen
     if(palette %in% c("mountain.train", "clear.skies")) {
