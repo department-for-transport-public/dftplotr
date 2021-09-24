@@ -71,19 +71,19 @@ dft.palettes <- list(
   ),
 
   just.beachy = extract_colours(
-    "CorporateGreen", "Yellow40", "NavyBlue80", "Mint40"
+    "Orange", "NavyBlueShade", "Yellow80", "DarkGrey", "Mint40"
   ),
 
   cycling.hills = extract_colours(
-    "CorporateGreen", "Lime60", "DarkGrey", "Yellow40"
+    "Green", "Charcoal", "CorporateGreen40", "CorporateGreenShade", "Lime40"
   ),
 
   mountain.train = extract_colours(
-    "CorporateGreen", "Lime40", "Charcoal", "Mint", "RedShade", "Yellow40"
+    "RedShade", "Yellow60", "NavyBlue80", "Orange80", "Charcoal", "MintShade"
   ),
 
   clear.skies = extract_colours(
-    "CorporateGreen", "Lime60", "NavyBlue60", "Yellow40", "SkyBlue", "Mint40"
+    "NavyBlue", "Mint40", "NavyBlue60", "Yellow40", "SkyBlueShade", "Lime60"
   )
 )
 
