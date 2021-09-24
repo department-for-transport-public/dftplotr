@@ -2,6 +2,7 @@
 
 export(dft.gradients)
 export(dft.palettes)
-export(displayPalette)
+export(display_palette)
+export(palette_picker_tool)
+export(scale_colour_dft)
 export(scale_fill_dft)
-export(showPalettes)

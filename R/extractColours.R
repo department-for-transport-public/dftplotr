@@ -1,10 +1,10 @@
 #' Function to extract palette colours as hex codes
 #'
 #' @param ... Individual character names of colours in palette
-#' @name extractColours
+#' @name extract_colours
 #' @title Extract named palette colours as hex codes
 #'
-extractColours <- function(...) {
+extract_colours <- function(...) {
   cols <- c(...)
 
   if (is.null(cols))

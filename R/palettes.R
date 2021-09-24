@@ -62,29 +62,29 @@ dft.colours <- c(
 #' @noRd
 #' @examples
 dft.palettes <- list(
-  main.palette = extractColours(
-  "CorporateGreen", "Lime60", "NavyBlue", "Orange80"
-),
+  main.palette = extract_colours(
+    "CorporateGreen", "Lime60", "NavyBlue", "Orange80"
+  ),
 
-electric.brights = extractColours(
-  "CorporateGreen", "Lime", "NavyBlue", "Orange"
-),
+  electric.brights = extract_colours(
+    "CorporateGreen", "Lime", "NavyBlue", "Orange"
+  ),
 
-just.beachy = extractColours(
-  "CorporateGreen", "Yellow40", "NavyBlue80", "Mint40"
-),
+  just.beachy = extract_colours(
+    "Orange", "NavyBlueShade", "Yellow80", "DarkGrey", "Mint40"
+  ),
 
-cycling.hills = extractColours(
-  "CorporateGreen", "Lime60", "DarkGrey", "Yellow40"
-),
+  cycling.hills = extract_colours(
+    "Green", "Charcoal", "CorporateGreen40", "CorporateGreenShade", "Lime40"
+  ),
 
-mountain.train = extractColours(
-  "CorporateGreen", "Lime40", "Charcoal", "Mint", "RedShade", "Yellow40"
-),
+  mountain.train = extract_colours(
+    "RedShade", "Yellow60", "NavyBlue80", "Orange80", "Charcoal", "MintShade"
+  ),
 
-clear.skies = extractColours(
-  "CorporateGreen", "Lime60", "NavyBlue60", "Yellow40", "SkyBlue", "LightGrey"
-)
+  clear.skies = extract_colours(
+    "NavyBlue", "Mint40", "NavyBlue60", "Yellow40", "SkyBlueShade", "Lime60"
+  )
 )
 
 #' Gradient colour palettes
@@ -95,27 +95,27 @@ clear.skies = extractColours(
 #' @examples
 
 dft.gradients <- list(
-  main.palette = extractColours(
+  main.palette = extract_colours(
     "CorporateGreenShade", "CorporateGreen40"
-    ),
+  ),
 
-  electric.brights = extractColours(
+  electric.brights = extract_colours(
     "Red", "Yellow"
   ),
 
-  just.beachy = extractColours(
+  just.beachy = extract_colours(
     "Yellow", "SkyBlue"
   ),
 
-  cycling.hills = extractColours(
+  cycling.hills = extract_colours(
     "Lime", "DarkGrey"
   ),
 
-  mountain.train = extractColours(
+  mountain.train = extract_colours(
     "Mint40", "Charcoal"
   ),
 
-  clear.skies = extractColours(
+  clear.skies = extract_colours(
     "NavyBlueShade", "SkyBlue40"
   )
 )

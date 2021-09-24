@@ -1,13 +1,21 @@
-#' Displays a visual colour chart of a selected palette
+#' Displays a visual colour chart of a selected palette based on the name of the palette.
+#'
+#' Current DfT palettes available are main.palette, electric.brights, just.beachy, cycling.hills, mountain.train and clear.skies.
+#'
+#' All palettes are available as either pre-set palettes of colours, or as gradients. Gradient palettes allow the user to select as many colour options as they like using the dots argument.
+#'
 #' @export
-#' @name displayPalette
-#' @title Launch DfT palette picker tool
+#' @name display_palette
+#' @param palette string, name of palette of interest
+#' @param gradient boolean to indicate whether palette should be standard colours or gradient. Default is gradient = FALSE
+#' @param ... Additional arguments to pass to the extract_gradient function, such as number of colours to display in gradient palette
+#' @title Displays a visual colour chart of a selected palette
 
-displayPalette <- function(palette, gradient = FALSE, n = 5){
+display_palette <- function(palette, gradient = FALSE, ...){
 
   ##Select gradient or palette
   if(gradient){
-  x <- dftplotr:::extractGradient(colours = palette, n = n)
+  x <- dftplotr:::extract_gradient(palette = palette, ...)
   }else{
   x <- dft.palettes[[palette]]
   }
@@ -17,7 +25,9 @@ displayPalette <- function(palette, gradient = FALSE, n = 5){
     ggplot2::geom_col() +
     ggplot2::coord_flip() +
     ggplot2::theme_void(base_size = 13) +
+    ggplot2::ggtitle(palette) +
     ggplot2::theme(legend.position = "none",
+                   plot.title.position =  "panel",
                    axis.text.y = ggplot2::element_text(),
                    plot.margin = ggplot2::unit(c(10, 10, 10, 10), "pt")) +
     ggplot2::scale_fill_manual(values = rev(unname(x))) +
