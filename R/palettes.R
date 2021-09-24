@@ -79,11 +79,11 @@ cycling.hills = extractColours(
 ),
 
 mountain.train = extractColours(
-  "CorporateGreen", "Lime40", "Charcoal", "Mint"
+  "CorporateGreen", "Lime40", "Charcoal", "Mint", "RedShade", "Yellow40"
 ),
 
 clear.skies = extractColours(
-  "CorporateGreen", "Lime60", "NavyBlue", "SkyBlue60"
+  "CorporateGreen", "Lime60", "NavyBlue60", "Yellow40", "SkyBlue", "LightGrey"
 )
 )
 
@@ -95,25 +95,27 @@ clear.skies = extractColours(
 #' @examples
 
 dft.gradients <- list(
-  main.palette = extractGradient(extractColours("CorporateGreenShade", "CorporateGreen40")),
+  main.palette = extractColours(
+    "CorporateGreenShade", "CorporateGreen40"
+    ),
 
   electric.brights = extractColours(
-    "CorporateGreen", "Lime", "NavyBlue", "Orange"
+    "Red", "Yellow"
   ),
 
   just.beachy = extractColours(
-    "CorporateGreen", "Yellow40", "NavyBlue80", "Mint40"
+    "Yellow", "SkyBlue"
   ),
 
   cycling.hills = extractColours(
-    "CorporateGreen", "Lime60", "DarkGrey", "Yellow40"
+    "Lime", "DarkGrey"
   ),
 
   mountain.train = extractColours(
-    "CorporateGreen", "Lime40", "Charcoal", "Mint"
+    "Mint40", "Charcoal"
   ),
 
   clear.skies = extractColours(
-    "CorporateGreen", "Lime60", "NavyBlue", "SkyBlue60"
+    "NavyBlueShade", "SkyBlue40"
   )
 )

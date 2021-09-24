@@ -24,6 +24,7 @@ shinyUI(fluidPage(
       uiOutput("select_2"),
       uiOutput("select_3"),
       uiOutput("select_4"),
+      uiOutput("select_5"),
       hr(),
       h4("Accessibility options"),
 

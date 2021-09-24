@@ -3,15 +3,15 @@
 #' @name displayPalette
 #' @title Launch DfT palette picker tool
 
-displayPalette <- function(palette, gradient = FALSE){
+displayPalette <- function(palette, gradient = FALSE, n = 5){
 
   ##Select gradient or palette
   if(gradient){
-    x <- dft.gradients[[palette]]
+  x <- dftplotr:::extractGradient(colours = palette, n = n)
   }else{
   x <- dft.palettes[[palette]]
   }
-  df <- dplyr::tibble(x = names(x), y = 1)
+  df <- dplyr::tibble(x = factor(x), y = 1)
 
   ggplot2::ggplot(df, ggplot2::aes(x = .data$x, y = .data$y, fill = .data$x)) +
     ggplot2::geom_col() +
