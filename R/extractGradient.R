@@ -6,6 +6,14 @@
 #' @title Extract gradient of n colours as hex codes based on DfT palettes
 #'
 extract_gradient <- function(palette, n = 5){
+
+  #Stop and list palette names if not expected variable
+  if(!palette %in% names(dft.gradients)){
+    stop(paste(palette, "is not a recognised DfT gradient. Available gradients are: ",
+               paste(names(dft.palettes), collapse = ", ")))
+  }
+
+  message(paste("Returning a gradient with", n, "shades. To change the number of shades returned, use the n parameter"))
   warning("Gradient palettes do not meet accessibility requirements for publishing")
 
   ramp  <- colorRampPalette(colors = dft.gradients[[palette]])

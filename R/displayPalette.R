@@ -13,6 +13,12 @@
 
 display_palette <- function(palette, gradient = FALSE, ...){
 
+  #Stop and list palette names if not expected variable
+  if(!palette %in% names(dft.palettes)){
+    stop(paste(palette, "is not a recognised DfT palette. Available palettes are: ",
+               paste(names(dft.palettes), collapse = ", ")))
+  }
+
   ##Select gradient or palette
   if(gradient){
   x <- dftplotr:::extract_gradient(palette = palette, ...)
