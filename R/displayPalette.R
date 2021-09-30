@@ -27,9 +27,9 @@ display_palette <- function(palette, gradient = FALSE, ...){
 
   ##Select gradient or palette
   if(gradient){
-  x <- dftplotr:::extract_gradient(palette = palette, ...)
+    x <- dftplotr:::extract_gradient(palette = palette, ...)
   }else{
-  x <- dft.palettes[[palette]]
+    x <- dft.palettes[[palette]]
   }
   df <- dplyr::tibble(x = factor(x), y = 1)
 
