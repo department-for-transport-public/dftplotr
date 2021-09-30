@@ -41,7 +41,10 @@ scale_all_dft <- function(palette, gradient, ...){
 #' @param ... Other arguments to pass to extract gradients function
 #' @name scale_fill_dft
 #' @title Extract named palette colours as hex codes for use in area charts
-#'
+#' @example man/examples/scale_fill_dft.R
+#' @example man/examples/scale_fill_dft_alternate.R
+#' @example man/examples/scale_fill_dft_complex.R
+#' @example man/examples/scale_fill_dft_gradient.R
 #'
 scale_fill_dft <- function(palette = "main.palette", gradient = FALSE, ...) {
   pal <- scale_all_dft(palette = palette, gradient = gradient, ...)
