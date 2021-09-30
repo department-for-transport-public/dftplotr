@@ -16,7 +16,5 @@ It contains options to allow you to select a WCAG 2.0 accessibility rating you r
 }
 \examples{
 # Launch of palette picker tool
-##Example running of palette_picker_tool
-
 palette_picker_tool()
 }
