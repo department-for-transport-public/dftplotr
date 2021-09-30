@@ -2,7 +2,7 @@
 % Please edit documentation in R/scaleXDft.R
 \name{scale_colour_dft}
 \alias{scale_colour_dft}
-\title{Extract named palette colours as hex codes}
+\title{Extract named palette colours as hex codes for use in line charts}
 \usage{
 scale_colour_dft(palette = "main.palette", gradient = FALSE, ...)
 }
