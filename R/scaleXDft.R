@@ -52,14 +52,15 @@ scale_fill_dft <- function(palette = "main.palette", gradient = FALSE, ...) {
 #' Function to use custom DfT palettes for line colours in ggplot charts
 #'
 #' @export
-#' @param palette Named DfT palette to use in line colours. Defaults to "main.palette"
+#' @param palette Named DfT palette to use in line colours. Defaults to "electric.brights"
 #' @param gradient Boolean response whether to use gradient palette instead of standard palettes. Defaults to false.
 #' @param ... Other arguments to pass to extract gradients function
 #' @name scale_colour_dft
 #' @title Extract named palette colours as hex codes for use in line charts
+#' @example man/examples/scale_colour_dft.R
+#' @example man/examples/scale_colour_dft_complex.R
 #'
-#'
-scale_colour_dft <- function(palette = "main.palette", gradient = FALSE, ...) {
+scale_colour_dft <- function(palette = "electric.brights", gradient = FALSE, ...) {
 
   pal <- scale_all_dft(palette = palette, gradient = gradient, ...)
   scale_color_manual(values = pal)
