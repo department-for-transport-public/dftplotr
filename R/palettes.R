@@ -1,9 +1,8 @@
 #' Colour palettes
 #'
-#' Returns a named vector containing the full list of available colours.
+#' A named vector containing the full list of available colours.
 #'
 #' @noRd
-#' @examples
 
 dft.colours <- c(
   "CorporateGreen" = "#006853",
@@ -60,7 +59,7 @@ dft.colours <- c(
 #' Individual palettes returning 4 hex codes each
 #' @export
 #' @noRd
-#' @examples
+
 dft.palettes <- list(
   main.palette = extract_colours(
     "CorporateGreen", "Lime60", "NavyBlue", "Orange80"
@@ -92,7 +91,6 @@ dft.palettes <- list(
 #' Individual palettes returning 10 hex codes for a single shade gradient
 #' @export
 #' @noRd
-#' @examples
 
 dft.gradients <- list(
   main.palette = extract_colours(
