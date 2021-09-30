@@ -7,6 +7,8 @@
 #' @export
 #' @name palette_picker_tool
 #' @title Launch DfT palette picker tool
+#' @examples # Launch of palette picker tool
+#' @example man/examples/example_palette_picker_tool.R
 
 palette_picker_tool <- function() {
   appDir <- system.file("shiny-examples", "myapp", package = "dftplotr")

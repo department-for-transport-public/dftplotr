@@ -14,3 +14,9 @@ This tool allows visualisation of the full DfT corporate colour list in two char
 
 It contains options to allow you to select a WCAG 2.0 accessibility rating you require the palette to meet, and functions to show what that palette looks like in grayscale and with colour-blindness.
 }
+\examples{
+# Launch of palette picker tool
+##Example running of palette_picker_tool
+
+palette_picker_tool()
+}
