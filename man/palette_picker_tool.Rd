@@ -7,5 +7,10 @@
 palette_picker_tool()
 }
 \description{
-Launches a Shiny tool in R which allows visualisation of the DfT corporate palette in charting functions, to allow creation of accessible charting palettes.
+Launches the DfT palette picker Shiny tool in a new window.
+}
+\details{
+This tool allows visualisation of the full DfT corporate colour list in two chart formats; line and bar to allow you to build and visualise your own custom palettes.
+
+It contains options to allow you to select a WCAG 2.0 accessibility rating you require the palette to meet, and functions to show what that palette looks like in grayscale and with colour-blindness.
 }

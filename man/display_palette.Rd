@@ -19,5 +19,5 @@ Displays a visual colour chart of a selected palette based on the name of the pa
 \details{
 Current DfT palettes available are main.palette, electric.brights, just.beachy, cycling.hills, mountain.train and clear.skies.
 
-All palettes are available as either pre-set palettes of colours, or as gradients. Gradient palettes allow the user to select as many colour options as they like using the n argument.
+All palettes are available as either pre-set palettes of colours, or as gradients. Gradient palettes allow the user to select as many colour options as they like using the dots argument.
 }
