@@ -102,11 +102,11 @@ theme_bar_dft <- function(legend_right = FALSE,
   if(flip == TRUE){
 
     list(
-      dftplotr:::theme_general_dft(legend_right = legend_right,
+      dftplotr::theme_general_dft(legend_right = legend_right,
                         base_family = base_family,
                         base_size = base_size,
                         base_line_size = 2),
-      dftplotr:::scale_fill_dft(palette = palette, gradient = gradient, ...),
+      dftplotr::scale_fill_dft(palette = palette, gradient = gradient, ...),
       ggplot2::scale_y_continuous(expand = c(0, 0),
                                   labels = scales::label_number(accuracy = accuracy)),
       ggplot2::coord_flip(),
@@ -118,7 +118,7 @@ theme_bar_dft <- function(legend_right = FALSE,
       )
   }else{
   list(
-    dftplotr:::theme_general_dft(legend_right = legend_right,
+    dftplotr::theme_general_dft(legend_right = legend_right,
                                 base_family = base_family,
                                 base_size = base_size,
                                 base_line_size = 2),
@@ -158,11 +158,11 @@ theme_line_dft <- function(legend_right = FALSE,
                            ...){
 
   list(
-    dftplotr:::theme_general_dft(legend_right = legend_right,
+    dftplotr::theme_general_dft(legend_right = legend_right,
                                 base_family = base_family,
                                 base_size = base_size,
                                 base_line_size = 2),
-    dftplotr:::scale_colour_dft(palette = palette, gradient = gradient, ...),
+    dftplotr::scale_colour_dft(palette = palette, gradient = gradient, ...),
     ggplot2::scale_y_continuous(expand = c(0, 0),
                                 labels = scales::label_number(accuracy = accuracy)),
     ggplot2::expand_limits(y = 0),
