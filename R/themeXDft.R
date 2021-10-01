@@ -14,7 +14,7 @@ theme_general_dft <-  function(legend_position = "bottom",
                                base_family = "Arial",
                                base_size = 14,
                                base_line_size = 2){
-
+# half line organises the legend spacing and margins relative to base text size.
   half_line <- base_size/2
 
   if(legend_position == "right"){
@@ -81,7 +81,7 @@ theme_general_dft <-  function(legend_position = "bottom",
 #' @param base_family Font family
 #' @param base_size The base font size
 #' @param base_line_size The base line size
-#' @param accuracy The accuracy of the y-axis, default to 1 for 0 decimal place. 0.1 would give 1 decimal place.
+#' @param accuracy The accuracy of the y-axis, default to 1 for 0 decimal place. 0.1 would give 1 decimal place, 0.01 would give 2 decimal places.
 #' @param flip Boolean response whether to flip the x and y-axis. Defaults to false.
 #' @param palette The name of the DfT palette you want to use
 #' @param gradient Boolean response whether to use gradient palette instead of standard palettes. Defaults to false.
@@ -140,7 +140,7 @@ theme_bar_dft <- function(legend_position = "bottom",
 #' @param base_family Font family
 #' @param base_size The base font size
 #' @param base_line_size The base line size
-#' @param accuracy The accuracy of the y-axis, default to 1 for 0 decimal place. 0.1 would give 1 decimal place.
+#' @param accuracy The accuracy of the y-axis, default to 1 for 0 decimal place. 0.1 would give 1 decimal place, 0.01 would give 2 decimal places.
 #' @param palette The name of the DfT palette you want to use
 #' @param gradient Boolean response whether to use gradient palette instead of standard palettes. Defaults to false.
 #' @param ... Other arguments to pass to extract gradients function
@@ -164,7 +164,7 @@ theme_line_dft <- function(legend_position = "bottom",
                                 base_line_size = base_line_size),
     dftplotr::scale_colour_dft(palette = palette, gradient = gradient, ...),
     ggplot2::scale_y_continuous(expand = c(0, 0),
-                                labels = scales::label_number(accuracy = accuracy)),
+                                labels = round(scales::label_number(),accuracy)),
     ggplot2::expand_limits(y = 0),
     directlabels::geom_dl(method = list("last.points", 'last.bumpup')),
     ggplot2::coord_cartesian(clip = 'off'),
