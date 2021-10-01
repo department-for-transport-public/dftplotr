@@ -30,9 +30,9 @@ line_plot_grouped <- ggplot(fake_grouped_time_series, aes(x=date, y = number, gr
 #
 # plot
 # plot + theme_bar_dft()
-# plot + theme_bar_dft(flip = TRUE, legend_right = TRUE)
+# plot + theme_bar_dft(flip = TRUE, legend_position = "right")
 # plot2
-# plot2 + theme_bar_dft(flip = TRUE, legend_right = TRUE)
+# plot2 + theme_bar_dft(flip = TRUE, legend_position = "right")
 # line_plot
 # line_plot + theme_line_dft()
 # line_plot_grouped

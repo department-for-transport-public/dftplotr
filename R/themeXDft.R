@@ -118,7 +118,7 @@ theme_bar_dft <- function(legend_position = "bottom",
       )
   }else{
   list(
-    dftplotr::theme_general_dft(legend_right = legend_right,
+    dftplotr::theme_general_dft(legend_position = legend_position,
                                 base_family = base_family,
                                 base_size = base_size,
                                 base_line_size = base_line_size),
@@ -164,7 +164,7 @@ theme_line_dft <- function(legend_position = "bottom",
                                 base_line_size = base_line_size),
     dftplotr::scale_colour_dft(palette = palette, gradient = gradient, ...),
     ggplot2::scale_y_continuous(expand = c(0, 0),
-                                labels = round(scales::label_number(),accuracy)),
+                                labels = scales::label_number(accuracy = accuracy)),
     ggplot2::expand_limits(y = 0),
     directlabels::geom_dl(method = list("last.points", 'last.bumpup')),
     ggplot2::coord_cartesian(clip = 'off'),
