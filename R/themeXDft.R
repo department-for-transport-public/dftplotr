@@ -7,13 +7,13 @@
 #' @param legend_position the desired legend position. Selects bottom by default.
 #' @param base_family Font family
 #' @param base_size The base font size
-#' @param base_line_size Default
+#' @param base_line_size The base line size
 #' @title Displays a visual colour chart of a selected palette
 
 theme_general_dft <-  function(legend_position = "bottom",
                                base_family = "Arial",
                                base_size = 14,
-                               base_line_size = base_size/170){
+                               base_line_size = 2){
 
   half_line <- base_size/2
 
@@ -80,7 +80,7 @@ theme_general_dft <-  function(legend_position = "bottom",
 #' @param legend_position the desired legend position. Selects bottom by default.
 #' @param base_family Font family
 #' @param base_size The base font size
-#' @param base_line_size Default
+#' @param base_line_size The base line size
 #' @param accuracy The accuracy of the y-axis, default to 1 for 0 decimal place. 0.1 would give 1 decimal place.
 #' @param flip Boolean response whether to flip the x and y-axis. Defaults to false.
 #' @param palette The name of the DfT palette you want to use
@@ -105,7 +105,7 @@ theme_bar_dft <- function(legend_position = "bottom",
       dftplotr::theme_general_dft(legend_position = legend_position,
                         base_family = base_family,
                         base_size = base_size,
-                        base_line_size = 2),
+                        base_line_size = base_line_size),
       dftplotr::scale_fill_dft(palette = palette, gradient = gradient, ...),
       ggplot2::scale_y_continuous(expand = c(0, 0),
                                   labels = scales::label_number(accuracy = accuracy)),
@@ -121,7 +121,7 @@ theme_bar_dft <- function(legend_position = "bottom",
     dftplotr::theme_general_dft(legend_right = legend_right,
                                 base_family = base_family,
                                 base_size = base_size,
-                                base_line_size = 2),
+                                base_line_size = base_line_size),
     dftplotr:::scale_fill_dft(palette = palette),
     ggplot2::scale_y_continuous(expand = c(0, 0),
                                 labels = scales::label_number(accuracy = accuracy))
@@ -139,7 +139,7 @@ theme_bar_dft <- function(legend_position = "bottom",
 #' @param legend_position the desired legend position. Selects bottom by default.
 #' @param base_family Font family
 #' @param base_size The base font size
-#' @param base_line_size Default
+#' @param base_line_size The base line size
 #' @param accuracy The accuracy of the y-axis, default to 1 for 0 decimal place. 0.1 would give 1 decimal place.
 #' @param palette The name of the DfT palette you want to use
 #' @param gradient Boolean response whether to use gradient palette instead of standard palettes. Defaults to false.
@@ -151,7 +151,7 @@ theme_bar_dft <- function(legend_position = "bottom",
 theme_line_dft <- function(legend_position = "bottom",
                            base_family = "",
                            base_size = 14,
-                           base_line_size = base_size/170,
+                           base_line_size = 2,
                            accuracy = 1,
                            palette = "main.palette",
                            gradient = FALSE,
@@ -161,7 +161,7 @@ theme_line_dft <- function(legend_position = "bottom",
     dftplotr::theme_general_dft(legend_position = legend_position,
                                 base_family = base_family,
                                 base_size = base_size,
-                                base_line_size = 2),
+                                base_line_size = base_line_size),
     dftplotr::scale_colour_dft(palette = palette, gradient = gradient, ...),
     ggplot2::scale_y_continuous(expand = c(0, 0),
                                 labels = scales::label_number(accuracy = accuracy)),
