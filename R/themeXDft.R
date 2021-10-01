@@ -4,26 +4,26 @@
 #'
 #' @export
 #' @name theme_dft
-#' @param legend_right Logical indicating whether legend should be placed to the right of the plot. If FALSE, the default, legend is positioned below the plot.
+#' @param legend_position the desired legend position. Selects bottom by default.
 #' @param base_family Font family
 #' @param base_size The base font size
 #' @param base_line_size Default
 #' @title Displays a visual colour chart of a selected palette
 
-theme_general_dft <-  function(legend_right = FALSE,
+theme_general_dft <-  function(legend_position = "bottom",
                                base_family = "Arial",
                                base_size = 14,
                                base_line_size = base_size/170){
 
   half_line <- base_size/2
 
-  if(legend_right == TRUE){
+  if(legend_position == "right"){
     spec_legend_position <- "right"
     spec_legend_direction <- "vertical"
     legend_justification_spec <- "center"
     legend_box_spacing_spec = ggplot2::unit(2 * half_line, "pt")
   } else {
-    spec_legend_position <- "bottom"
+    spec_legend_position <- legend_position
     spec_legend_direction <- "horizontal"
     legend_justification_spec <- c(0,0)
     legend_box_spacing_spec <- ggplot2::unit(0, "char")
@@ -77,7 +77,7 @@ theme_general_dft <-  function(legend_right = FALSE,
 #'
 #' @export
 #' @name theme_bar_dft
-#' @param legend_right Logical indicating whether legend should be placed to the right of the plot. If FALSE, the default, legend is positioned below the plot.
+#' @param legend_position the desired legend position. Selects bottom by default.
 #' @param base_family Font family
 #' @param base_size The base font size
 #' @param base_line_size Default
@@ -89,7 +89,7 @@ theme_general_dft <-  function(legend_right = FALSE,
 #' @title Applies a standardised DfT theme to a ggplot bar plot
 
 
-theme_bar_dft <- function(legend_right = FALSE,
+theme_bar_dft <- function(legend_position = "bottom",
                           base_family = "",
                           base_size = 14,
                           base_line_size = 2,
@@ -102,7 +102,7 @@ theme_bar_dft <- function(legend_right = FALSE,
   if(flip == TRUE){
 
     list(
-      dftplotr::theme_general_dft(legend_right = legend_right,
+      dftplotr::theme_general_dft(legend_position = legend_position,
                         base_family = base_family,
                         base_size = base_size,
                         base_line_size = 2),
@@ -136,7 +136,7 @@ theme_bar_dft <- function(legend_right = FALSE,
 #'
 #' @export
 #' @name theme_line_dft
-#' @param legend_right Logical indicating whether legend should be placed to the right of the plot. If FALSE, the default, legend is positioned below the plot.
+#' @param legend_position the desired legend position. Selects bottom by default.
 #' @param base_family Font family
 #' @param base_size The base font size
 #' @param base_line_size Default
@@ -148,7 +148,7 @@ theme_bar_dft <- function(legend_right = FALSE,
 
 
 
-theme_line_dft <- function(legend_right = FALSE,
+theme_line_dft <- function(legend_position = "bottom",
                            base_family = "",
                            base_size = 14,
                            base_line_size = base_size/170,
@@ -158,7 +158,7 @@ theme_line_dft <- function(legend_right = FALSE,
                            ...){
 
   list(
-    dftplotr::theme_general_dft(legend_right = legend_right,
+    dftplotr::theme_general_dft(legend_position = legend_position,
                                 base_family = base_family,
                                 base_size = base_size,
                                 base_line_size = 2),
