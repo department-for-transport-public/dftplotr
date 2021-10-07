@@ -1,23 +1,39 @@
 library(ggplot2)
+library(dplyr)
+library(forcats)
 
 mtcars
 
-ggplot(mtcars, aes(x = gear, fill = factor(am), group = am))+
-  geom_bar()+
-  theme_grey() +
- #scale_fill_dft(palette = "mountain.train")+
-  theme(line = element_line(colour = "grey80"),
-        panel.grid = element_blank(),
-        axis.ticks = element_blank(),
-        axis.title.x = element_blank(),
-        axis.title.y = element_text(angle = 0),
-        axis.ticks.length = unit(0.5, "lines"),
-        panel.background = element_blank(),
-        legend.title = element_blank(),
-        legend.key = element_blank(),
-        legend.key.size = unit(1.5, "lines"),
-        legend.position = "bottom",
-        legend.spacing.x = unit(0.5, 'cm'),
-        panel.spacing = unit(1, "lines"),
-        strip.background = element_blank(),
-        strip.text = element_text(face = "bold"))
+
+plot <- ggplot(mtcars, aes(x = gear, fill = factor(am), group = am)) +
+    geom_bar()
+
+plot2 <- mtcars %>%
+  mutate(gear = fct_rev(factor(gear))) %>%
+  ggplot(aes(x = gear, fill = factor(am), group = am)) +
+  geom_bar()
+
+
+line_plot <- ggplot(economics,aes(x=date, y = pop, label = "population")) +
+  ggplot2::geom_line()
+
+
+fake_grouped_time_series <- tibble::tibble(
+  date = c(2018, 2019, 2020, 2021, 2018, 2019, 2020, 2021, 2018, 2019, 2020, 2021),
+  group = c("example", "example", "example", "example", "exemple", "exemple", "exemple", "exemple", "beispiel", "beispiel", "beispiel", "beispiel"),
+  number = c(200, 250, 300, 350, 250, 300, 350, 400, 400, 400, 400, 355)
+)
+
+
+line_plot_grouped <- ggplot(fake_grouped_time_series, aes(x=date, y = number, group = group, label = group, color = group)) +
+  ggplot2::geom_line()
+#
+# plot
+# plot + theme_bar_dft()
+# plot + theme_bar_dft(flip = TRUE, legend_position = "right")
+# plot2
+# plot2 + theme_bar_dft(flip = TRUE, legend_position = "right")
+# line_plot
+# line_plot + theme_line_dft()
+# line_plot_grouped
+# line_plot_grouped + theme_line_dft()
