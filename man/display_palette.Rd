@@ -21,3 +21,11 @@ Current DfT palettes available are main.palette, electric.brights, just.beachy, 
 
 All palettes are available as either pre-set palettes of colours, or as gradients. Gradient palettes allow the user to select as many colour options as they like using the dots argument.
 }
+\examples{
+#Simple display of DfT palette example
+display_palette(palette = "just.beachy")
+#Simple display of DfT gradient palette example
+display_palette(palette = "just.beachy", gradient = TRUE)
+#Display of DfT gradient palette with specified length
+display_palette(palette = "just.beachy", gradient = TRUE, n = 7)
+}

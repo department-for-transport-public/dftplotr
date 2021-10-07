@@ -10,6 +10,12 @@
 #' @param gradient boolean to indicate whether palette should be standard colours or gradient. Default is gradient = FALSE
 #' @param ... Additional arguments to pass to the extract_gradient function, such as number of colours to display in gradient palette
 #' @title Displays a visual colour chart of a selected palette
+#' @examples #Simple display of DfT palette example
+#' display_palette(palette = "just.beachy")
+#' @examples #Simple display of DfT gradient palette example
+#' display_palette(palette = "just.beachy", gradient = TRUE)
+#' @examples #Display of DfT gradient palette with specified length
+#' display_palette(palette = "just.beachy", gradient = TRUE, n = 7)
 
 display_palette <- function(palette, gradient = FALSE, ...){
 
@@ -21,9 +27,9 @@ display_palette <- function(palette, gradient = FALSE, ...){
 
   ##Select gradient or palette
   if(gradient){
-  x <- dftplotr:::extract_gradient(palette = palette, ...)
+    x <- dftplotr:::extract_gradient(palette = palette, ...)
   }else{
-  x <- dft.palettes[[palette]]
+    x <- dft.palettes[[palette]]
   }
   df <- dplyr::tibble(x = factor(x), y = 1)
 
