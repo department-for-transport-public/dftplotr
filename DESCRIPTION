@@ -9,7 +9,9 @@ Depends: data.table,
          DescTools,
          dichromat,
          ggplot2,   
-         shiny
+         shiny,
+         scales,
+         directlabels
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
