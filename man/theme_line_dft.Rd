@@ -38,3 +38,35 @@ Applies a standardised DfT theme to a ggplot line plot.
 \details{
 This theme has been designed using charting best practice principles.
 }
+\examples{
+## Simple line plot using default palette
+
+library(ggplot2)
+
+df <- economics_long[economics_long$variable \%in\% c("psavert", "uempmed"), ]
+
+# plot
+ggplot(df, aes(x=date, y=value, col=variable, label=variable)) +
+  geom_line(size = 1) +
+  theme_line_dft()
+## Simple line plot using default palette
+
+library(ggplot2)
+
+df <- economics_long[economics_long$variable \%in\% c("psavert", "uempmed"), ]
+
+# plot
+ggplot(df, aes(x=date, y=value, col=variable, label=variable)) +
+  geom_line(size = 1) +
+  theme_line_dft(palette = "clear.skies")
+## Simple line plot using default palette
+
+library(ggplot2)
+
+df <- economics_long[economics_long$variable \%in\% c("psavert", "uempmed"), ]
+
+# plot
+ggplot(df, aes(x=date, y=value, col=variable, label=variable)) +
+  geom_line(size = 1) +
+  theme_line_dft(gradient = TRUE, n=2)
+}

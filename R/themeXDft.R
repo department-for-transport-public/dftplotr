@@ -3,12 +3,14 @@
 #' This theme has been designed using charting best practice principles.
 #'
 #' @export
-#' @name theme_dft
+#' @name theme_general_dft
 #' @param legend_position the desired legend position. Selects bottom by default.
 #' @param base_family Font family
 #' @param base_size The base font size
 #' @param base_line_size The base line size
 #' @title Displays a visual colour chart of a selected palette
+#' @example man/examples/theme_general_dft.R
+#'
 
 theme_general_dft <-  function(legend_position = "bottom",
                                base_family = "Arial",
@@ -32,8 +34,7 @@ theme_general_dft <-  function(legend_position = "bottom",
   ggplot2::theme_minimal(base_size = base_size,
                          base_family = base_family,
                          base_line_size = base_line_size) %+replace%
-    ggplot2::theme(text = ggplot2::element_text(size = base_size),
-                   plot.title = ggplot2::element_text(size = ggplot2::rel(1.2)),
+    ggplot2::theme(plot.title = ggplot2::element_text(size = ggplot2::rel(1.2)),
                    line = ggplot2::element_line(colour = "grey80"),
                    panel.grid = ggplot2::element_blank(),
                    panel.grid.major.y = ggplot2::element_line(
@@ -87,6 +88,10 @@ theme_general_dft <-  function(legend_position = "bottom",
 #' @param gradient Boolean response whether to use gradient palette instead of standard palettes. Defaults to false.
 #' @param ... Other arguments to pass to extract gradients function
 #' @title Applies a standardised DfT theme to a ggplot bar plot
+#' @example man/examples/theme_bar_dft.R
+#' @example man/examples/theme_bar_dft_palette.R
+#' @example man/examples/theme_bar_dft_gradient.R
+#'
 
 
 theme_bar_dft <- function(legend_position = "bottom",
@@ -145,6 +150,10 @@ theme_bar_dft <- function(legend_position = "bottom",
 #' @param gradient Boolean response whether to use gradient palette instead of standard palettes. Defaults to false.
 #' @param ... Other arguments to pass to extract gradients function
 #' @title Applies a standardised DfT theme to a ggplot line plot
+#' @example man/examples/theme_line_dft.R
+#' @example man/examples/theme_line_dft_palette.R
+#' @example man/examples/theme_line_dft_gradient.R
+#'
 
 
 

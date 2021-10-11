@@ -41,3 +41,32 @@ Applies a standardised DfT theme to a ggplot bar plot.
 \details{
 This theme has been designed using charting best practice principles.
 }
+\examples{
+## Simple bar chart using default palette
+
+library(ggplot2)
+
+df <- mpg[mpg$class \%in\% c("subcompact", "compact", "midsize", "suv"),]
+
+ggplot(df, aes(manufacturer)) +
+  geom_bar(aes(fill=class), width = 0.5) +
+  theme_bar_dft(flip = TRUE, legend_position = "top")
+## Simple bar chart using default palette
+
+library(ggplot2)
+
+df <- mpg[mpg$class \%in\% c("subcompact", "compact", "midsize", "suv"),]
+
+ggplot(df, aes(manufacturer)) +
+  geom_bar(aes(fill=class), width = 0.5) +
+  theme_bar_dft(flip = TRUE, legend_position = "top", palette = "just.beachy")
+## Simple bar chart using default palette
+
+library(ggplot2)
+
+df <- mpg[mpg$class \%in\% c("subcompact", "compact", "midsize", "suv"),]
+
+ggplot(df, aes(manufacturer)) +
+  geom_bar(aes(fill=class), width = 0.5) +
+  theme_bar_dft(flip = TRUE, legend_position = "top", palette = "just.beachy", gradient = TRUE)
+}
