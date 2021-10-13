@@ -1,4 +1,4 @@
-## Simple line plot using default palette
+## More complex line plot selecting another dft palette
 
 library(ggplot2)
 

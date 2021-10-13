@@ -1,4 +1,4 @@
-## Simple bar chart using default palette
+## More complex bar chart with another dft palette selected.
 
 library(ggplot2)
 

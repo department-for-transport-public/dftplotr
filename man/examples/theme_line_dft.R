@@ -1,4 +1,4 @@
-## Simple line plot using default palette
+## Simple line plot using standard line theme with default options
 
 library(ggplot2)
 

@@ -1,4 +1,4 @@
-## Simple line plot using default palette
+## More complex line plot using a gradient palette with two groups
 
 library(ggplot2)
 

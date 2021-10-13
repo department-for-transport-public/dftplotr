@@ -1,4 +1,4 @@
-## Simple bar chart using default palette
+## Simple bar chart with a flipped axis and legend at the top
 
 library(ggplot2)
 
