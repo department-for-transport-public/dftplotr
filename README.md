@@ -5,10 +5,14 @@ dftplotR is an R package to provide standardised charts formatting in ggplot2. I
 
 ## Installation
 
-You can install dftplotR with:
+The package can be installed directly from Github if you're **not on a network laptop**, using the devtools `install_github` call
 
     install.packages("devtools")
     devtools::install_github("departmentfortransport/dftplotr")
+
+It can also be installed on Citrix or a local laptop from our new folder This folder will be kept up to date with the latest live version on Github so you can always have the most recent functions.
+
+    install.packages('//virago.internal.dtlr.gov.uk/data/AFP/IHACAll/IHAC/002 Resources/010 R Programming Language/0001 Packages/dftplotr.zip', repos = NULL, type = "win.binary")
 
 ## Overview
 
@@ -19,6 +23,12 @@ The package contains the following functions:
 `scale_fill_dft`: ggplot function which applies one of a range of DfT palettes to a ggplot line chart (or other chart which groups by **fill**)
 
 `display_palette`: a visual output which shows all of the colours contained in the selected DfT palette
+
+`theme_general_dft`; ggplot function which applies a standardised theme to all ggplot charts.
+
+`theme_bar_dft`; ggplot function which applies a standardised theme to ggplot bar chart. There are options to pick other dft color palettes and top flip the x and y axis. This theme also sets the x-axis intercept at y to 0.
+
+`theme_line_dft`; ggplot function which applies a standardised theme to a ggplot line chart. There are options to pick other dft color palettes. This theme also sets the x-axis intercept at y to 0.
 
 `palette_picker_tool`: loads an interactive Shiny dashboard which allows users to build their own custom palettes of up to 5 colours using the DfT corporate colours.
 
@@ -36,9 +46,28 @@ The dftplotR package also comes with 6 gradient palettes. These have defined sta
 
 The palettes and the colours in them can be seen here, or visualised within the package by calling `display.palette(gradient = TRUE)` and the palette name. The number of shades in the palette can be specified using the `n =` argument, e.g. `n = 8` for a palette with 8 shades. When this argument is not used, the default number of shades is 5. Example gradient palettes with 5 shades can be seen below:
 
+    ## Returning a gradient with 5 shades. To change the number of shades returned, use the n parameter
+    ## Returning a gradient with 5 shades. To change the number of shades returned, use the n parameter
+    ## Returning a gradient with 5 shades. To change the number of shades returned, use the n parameter
+    ## Returning a gradient with 5 shades. To change the number of shades returned, use the n parameter
+    ## Returning a gradient with 5 shades. To change the number of shades returned, use the n parameter
+    ## Returning a gradient with 5 shades. To change the number of shades returned, use the n parameter
+
 <img src="README_files/figure-markdown_github/unnamed-chunk-2-1.png" width="80%" style="display: block; margin: auto;" />
 
 ## ggplot2 themes
+
+The dftplotR package comes with three standard themes to apply to charts.
+
+The `theme_general_dft` theme can be applied to any ggplot chart type and works well if you want to
+
+The `theme_bar_dft` theme work best with bar charts. It gives the flexibility of customising the final plot with options for changing the colour palette, moving the legend position and flipping the x and y-axis around when x-axis labels are too long. It also sets the intercept of the x-axis with the y-axis to 0.
+
+The `theme_line_dft` theme works best with line charts. It gives he flexibility of customising the final plot with options for changing the colour paletter. It also labels lines with the label name and sets the intercept of the x-axis with the y-axis to 0.
+
+The difference between a bar plot without themeing and one with the `theme_bar_dft` theme can be seen below:
+
+<img src="README_files/figure-markdown_github/unnamed-chunk-3-1.png" width="50%" /><img src="README_files/figure-markdown_github/unnamed-chunk-3-2.png" width="50%" />
 
 ## Palette picker tool
 
@@ -50,7 +79,7 @@ This tool is ideal to facilitate building your own palettes for use in applicati
 
 ## Accessibility
 
-The mojchart colour palettes aim to be accessible to those with the most common forms of colour blindness, and should also be discernable in greyscale. The standard palettes in this package have been designed to meet WCAG 2.0 accessibility guidance.
+The dftplotr colour palettes aim to be accessible to those with the most common forms of colour blindness, and should also be discernable in greyscale. The standard palettes in this package have been designed to meet WCAG 2.0 accessibility guidance.
 
 Four of the created palettes (`main.palette`, `electric.brights`, `just.beachy` and `cycling.hills`) contain four colours each, and meet WCAG 2.0 AAA guidance. All colours have a contrast ratio of at least 4.5:1 to the bars adjacent to them, and alternate light and dark shades to further increase contrast. This is the highest standard of accessibility and should be used when possible.
 
