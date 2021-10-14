@@ -27,7 +27,7 @@ Applies a standardised DfT theme to a ggplot.
 This theme has been designed using charting best practice principles.
 }
 \examples{
-## Simple line plot using default palette
+## Simple line plot using general theme with default options
 
 library(ggplot2)
 
