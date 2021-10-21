@@ -50,7 +50,7 @@ This tool is ideal to facilitate building your own palettes for use in applicati
 
 ## Accessibility
 
-The mojchart colour palettes aim to be accessible to those with the most common forms of colour blindness, and should also be discernable in greyscale. The standard palettes in this package have been designed to meet WCAG 2.0 accessibility guidance.
+The dftplotr colour palettes aim to be accessible to those with the most common forms of colour blindness, and should also be discernable in greyscale. The standard palettes in this package have been designed to meet WCAG 2.0 accessibility guidance.
 
 Four of the created palettes (`main.palette`, `electric.brights`, `just.beachy` and `cycling.hills`) contain four colours each, and meet WCAG 2.0 AAA guidance. All colours have a contrast ratio of at least 4.5:1 to the bars adjacent to them, and alternate light and dark shades to further increase contrast. This is the highest standard of accessibility and should be used when possible.
 

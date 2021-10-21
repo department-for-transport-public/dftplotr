@@ -78,11 +78,11 @@ dft.palettes <- list(
   ),
 
   mountain.train = extract_colours(
-    "RedShade", "Yellow60", "NavyBlue80", "Orange80", "Charcoal", "MintShade"
+    "RedShade", "Yellow80", "NavyBlue80", "Orange80", "Charcoal", "MintShade"
   ),
 
   clear.skies = extract_colours(
-    "NavyBlue", "Mint40", "NavyBlue60", "Yellow40", "SkyBlueShade", "Lime60"
+    "NavyBlue", "Mint40", "NavyBlue60", "Yellow80", "SkyBlueShade", "Lime60"
   )
 )
 
