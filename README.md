@@ -46,20 +46,13 @@ The dftplotR package also comes with 6 gradient palettes. These have defined sta
 
 The palettes and the colours in them can be seen here, or visualised within the package by calling `display.palette(gradient = TRUE)` and the palette name. The number of shades in the palette can be specified using the `n =` argument, e.g. `n = 8` for a palette with 8 shades. When this argument is not used, the default number of shades is 5. Example gradient palettes with 5 shades can be seen below:
 
-    ## Returning a gradient with 5 shades. To change the number of shades returned, use the n parameter
-    ## Returning a gradient with 5 shades. To change the number of shades returned, use the n parameter
-    ## Returning a gradient with 5 shades. To change the number of shades returned, use the n parameter
-    ## Returning a gradient with 5 shades. To change the number of shades returned, use the n parameter
-    ## Returning a gradient with 5 shades. To change the number of shades returned, use the n parameter
-    ## Returning a gradient with 5 shades. To change the number of shades returned, use the n parameter
-
 <img src="README_files/figure-markdown_github/unnamed-chunk-2-1.png" width="80%" style="display: block; margin: auto;" />
 
 ## ggplot2 themes
 
 The dftplotR package comes with three standard themes to apply to charts.
 
-The `theme_general_dft` theme can be applied to any ggplot chart type and works well if you want to
+The `theme_general_dft` theme can be applied to any ggplot chart type and is used as a base for the other two more specific themes.
 
 The `theme_bar_dft` theme work best with bar charts. It gives the flexibility of customising the final plot with options for changing the colour palette, moving the legend position and flipping the x and y-axis around when x-axis labels are too long. It also sets the intercept of the x-axis with the y-axis to 0.
 
