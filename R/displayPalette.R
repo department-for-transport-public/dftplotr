@@ -31,7 +31,7 @@ display_palette <- function(palette, gradient = FALSE, ...){
   }else{
     x <- dft.palettes[[palette]]
   }
-  df <- dplyr::tibble(x = factor(x), y = 1)
+  df <- dplyr::tibble(x = unname(x), y = 1)
 
   ggplot2::ggplot(df, ggplot2::aes(x = .data$x, y = .data$y, fill = .data$x)) +
     ggplot2::geom_col() +
@@ -42,7 +42,7 @@ display_palette <- function(palette, gradient = FALSE, ...){
                    plot.title.position =  "panel",
                    axis.text.y = ggplot2::element_text(),
                    plot.margin = ggplot2::unit(c(10, 10, 10, 10), "pt")) +
-    ggplot2::scale_fill_manual(values = rev(unname(x))) +
-    ggplot2::scale_x_discrete(labels = unname(x)) +
+    ggplot2::scale_fill_manual(values = rev(df$x)) +
+    ggplot2::scale_x_discrete(labels = rev(df$x)) +
     ggplot2::scale_y_continuous(expand = ggplot2::expansion(mult = 0.02))
 }
