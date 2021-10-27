@@ -1,7 +1,7 @@
 Package: dftplotr
 Type: Package
 Title: Functions to produce charts in the DfT style
-Version: 0.1.0
+Version: 0.1.1
 Author: Francesca Bryden
 Maintainer: Francesca Bryden <francesca.bryden@dft.gov.uk>
 Description: Functions to produce charts in the DfT style
