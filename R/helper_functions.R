@@ -1,3 +1,18 @@
+# Evaluates all arguments (see #81)
+force_all <- function(...) list(...)
+
+range_finite <- function(x) {
+  suppressWarnings(range(x, na.rm = TRUE, finite = TRUE))
+}
+
+seq2 <- function(from, to) {
+  if (from > to) {
+    numeric()
+  } else {
+    from:to
+  }
+}
+
 #' Label numbers in decimal format (e.g. 0.12, 1,234)
 #'
 #' Use `label_number()` force decimal display of numbers (i.e. don't use
