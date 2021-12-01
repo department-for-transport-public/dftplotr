@@ -118,7 +118,7 @@ theme_bar_dft <- function(legend_position = "bottom",
                         margin_sizes = margin_sizes),
       dftplotr::scale_fill_dft(palette = palette, gradient = gradient, ...),
       ggplot2::scale_y_continuous(expand = c(0, 0),
-                                  labels = scales::label_number(accuracy = accuracy)),
+                                  labels = label_number(accuracy = accuracy)),
       ggplot2::coord_flip(),
       ggplot2::theme(
         panel.grid.major.x = ggplot2::element_line(color = "#CCC1B7"),
@@ -134,7 +134,7 @@ theme_bar_dft <- function(legend_position = "bottom",
                                 base_line_size = base_line_size),
     dftplotr:::scale_fill_dft(palette = palette),
     ggplot2::scale_y_continuous(expand = c(0, 0),
-                                labels = scales::label_number(accuracy = accuracy))
+                                labels = label_number(accuracy = accuracy))
     )
   }
 }
@@ -181,7 +181,7 @@ theme_line_dft <- function(legend_position = "bottom",
                                 margin_sizes = margin_sizes),
     dftplotr::scale_colour_dft(palette = palette, gradient = gradient, ...),
     ggplot2::scale_y_continuous(expand = c(0, 0),
-                                labels = scales::label_number(accuracy = accuracy)),
+                                labels = label_number(accuracy = accuracy)),
     ggplot2::expand_limits(y = 0),
     directlabels::geom_dl(method = list("last.points", 'last.bumpup')),
     ggplot2::coord_cartesian(clip = 'off'),
