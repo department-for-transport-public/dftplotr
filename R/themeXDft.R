@@ -154,6 +154,7 @@ theme_bar_dft <- function(legend_position = "bottom",
 #' @param accuracy The accuracy of the y-axis, default to 1 for 0 decimal place. 0.1 would give 1 decimal place, 0.01 would give 2 decimal places.
 #' @param palette The name of the DfT palette you want to use
 #' @param gradient Boolean response whether to use gradient palette instead of standard palettes. Defaults to false.
+#' @param labels Booleans reponse whether to directly label lines on the chart. Defaults to TRUE
 #' @param ... Other arguments to pass to extract gradients function
 #' @title Applies a standardised DfT theme to a ggplot line plot
 #' @example man/examples/theme_line_dft.R
@@ -169,11 +170,12 @@ theme_line_dft <- function(legend_position = "bottom",
                            base_line_size = 2,
                            margin_sizes = c(2, 1, 1, 1),
                            accuracy = 1,
+                           labels = TRUE,
                            palette = "main.palette",
                            gradient = FALSE,
                            ...){
 
-  list(
+  theme_list <- list(
     dftplotr::theme_general_dft(legend_position = legend_position,
                                 base_family = base_family,
                                 base_size = base_size,
@@ -183,7 +185,14 @@ theme_line_dft <- function(legend_position = "bottom",
     ggplot2::scale_y_continuous(expand = c(0, 0),
                                 labels = label_number(accuracy = accuracy)),
     ggplot2::expand_limits(y = 0),
-    directlabels::geom_dl(method = list(dl.trans(x = x * 1.02), "last.points", 'last.bumpup')),
     ggplot2::coord_cartesian(clip = 'off'),
     ggplot2::theme(legend.position = 'none'))
+
+  ##Turn off labelling if required
+  if(labels == TRUE){
+    theme_list <- c(theme_list, directlabels::geom_dl(method = list(dl.trans(x = x * 1.02), "last.points", 'last.bumpup')))
+  }
+
+  return(theme_list)
+
 }
