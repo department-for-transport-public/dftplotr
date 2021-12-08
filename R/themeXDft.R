@@ -183,7 +183,7 @@ theme_line_dft <- function(legend_position = "bottom",
     ggplot2::scale_y_continuous(expand = c(0, 0),
                                 labels = scales::label_number(accuracy = accuracy)),
     ggplot2::expand_limits(y = 0),
-    directlabels::geom_dl(method = list("last.points", 'last.bumpup')),
+    directlabels::geom_dl(method = list(dl.trans(x = x * 1.02), "last.points", 'last.bumpup')),
     ggplot2::coord_cartesian(clip = 'off'),
     ggplot2::theme(legend.position = 'none'))
 }
