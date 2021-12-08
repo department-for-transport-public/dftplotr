@@ -77,7 +77,7 @@ label_number <- function(accuracy = NULL, scale = 1, prefix = "",
     trim,
     ...
   )
-  function(x) scales::number(
+  function(x) number(
     x,
     accuracy = accuracy,
     scale = scale,
@@ -89,3 +89,41 @@ label_number <- function(accuracy = NULL, scale = 1, prefix = "",
     ...
   )
 }
+
+#' A low-level numeric formatter
+#'
+#' This function is a low-level helper that powers many of the labelling
+#' functions. You should generally not need to call it directly unless you
+#' are creating your own labelling function.
+#'
+#' @keywords internal
+#' @inheritParams label_number
+#' @return A character vector of `length(x)`.
+number <- function(x, accuracy = NULL, scale = 1, prefix = "",
+                   suffix = "", big.mark = " ", decimal.mark = ".",
+                   trim = TRUE, ...) {
+  if (length(x) == 0) return(character())
+  accuracy <- accuracy %||% precision(x * scale)
+  x <- round_any(x, accuracy / scale)
+  nsmall <- -floor(log10(accuracy))
+  nsmall <- min(max(nsmall, 0), 20)
+
+  ret <- format(
+    scale * x,
+    big.mark = big.mark,
+    decimal.mark = decimal.mark,
+    trim = trim,
+    nsmall = nsmall,
+    scientific = FALSE,
+    ...
+  )
+  ret <- paste0(prefix, ret, suffix)
+  ret[is.infinite(x)] <- as.character(x[is.infinite(x)])
+
+  # restore NAs from input vector
+  ret[is.na(x)] <- NA
+  names(ret) <- names(x)
+
+  ret
+}
+
