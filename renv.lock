@@ -1,0 +1,671 @@
+{
+  "R": {
+    "Version": "3.5.1",
+    "Repositories": [
+      {
+        "Name": "https://mran.microsoft.com/snapshot/2021-09-17"
+        "URL": "https://mran.microsoft.com/snapshot/2021-09-17"
+      }
+    ]
+  },
+  "Packages": {
+    "BH": {
+      "Package": "BH",
+      "Version": "1.69.0-1",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "f4605d46264b35f53072fc9ee7ace15f"
+    },
+    "DescTools": {
+      "Package": "DescTools",
+      "Version": "0.99.28",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "25d07a0027b4e9db264504ab4c920316"
+    },
+    "MASS": {
+      "Package": "MASS",
+      "Version": "7.3-50",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "b24dc52a732ee76079252f793c210b37"
+    },
+    "Matrix": {
+      "Package": "Matrix",
+      "Version": "1.2-14",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "e84dcbc31943fe880bbb80fd59baca6d"
+    },
+    "R6": {
+      "Package": "R6",
+      "Version": "2.5.0",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "b203113193e70978a696b2809525649d"
+    },
+    "RColorBrewer": {
+      "Package": "RColorBrewer",
+      "Version": "1.1-2",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "e031418365a7f7a766181ab5a41a5716"
+    },
+    "Rcpp": {
+      "Package": "Rcpp",
+      "Version": "1.0.7",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "dab19adae4440ae55aa8a9d238b246bb"
+    },
+    "base64enc": {
+      "Package": "base64enc",
+      "Version": "0.1-3",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "543776ae6848fde2f48ff3816d0628bc"
+    },
+    "boot": {
+      "Package": "boot",
+      "Version": "1.3-20",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "560a6eb3b4658e2ce3d0f8feb087fe56"
+    },
+    "brio": {
+      "Package": "brio",
+      "Version": "1.0.0",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "8d11863c163969ab02bf34ea0c446f7b"
+    },
+    "bslib": {
+      "Package": "bslib",
+      "Version": "0.2.5.1",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "2f069f3f42847231aef7baa49bed97b0"
+    },
+    "cachem": {
+      "Package": "cachem",
+      "Version": "1.0.6",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "648c5b3d71e6a37e3043617489a0a0e9"
+    },
+    "callr": {
+      "Package": "callr",
+      "Version": "3.7.0",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "461aa75a11ce2400245190ef5d3995df"
+    },
+    "cli": {
+      "Package": "cli",
+      "Version": "3.0.1",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "e3ae5d68dea0c55a12ea12a9fda02e61"
+    },
+    "colorspace": {
+      "Package": "colorspace",
+      "Version": "2.0-2",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "6baccb763ee83c0bd313460fdb8b8a84"
+    },
+    "commonmark": {
+      "Package": "commonmark",
+      "Version": "1.7",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "0f22be39ec1d141fd03683c06f3a6e67"
+    },
+    "cpp11": {
+      "Package": "cpp11",
+      "Version": "0.3.1",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "e02edab2bc389c5e4b12949b13df44f2"
+    },
+    "crayon": {
+      "Package": "crayon",
+      "Version": "1.4.1",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "e75525c55c70e5f4f78c9960a4b402e9"
+    },
+    "data.table": {
+      "Package": "data.table",
+      "Version": "1.14.0",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "d1b8b1a821ee564a3515fa6c6d5c52dc"
+    },
+    "desc": {
+      "Package": "desc",
+      "Version": "1.3.0",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "b6963166f7f10b970af1006c462ce6cd"
+    },
+    "dichromat": {
+      "Package": "dichromat",
+      "Version": "2.0-0",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "fe1a3788cf243db3eca07ae661860793"
+    },
+    "diffobj": {
+      "Package": "diffobj",
+      "Version": "0.2.4",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "17e9db86f01ff49ee4d70877b0997dfb"
+    },
+    "digest": {
+      "Package": "digest",
+      "Version": "0.6.27",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "a0cbe758a531d054b537d16dff4d58a1"
+    },
+    "directlabels": {
+      "Package": "directlabels",
+      "Version": "2021.1.13",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "dd27110dd3d729cca5fa4b2bf52a2040"
+    },
+    "dplyr": {
+      "Package": "dplyr",
+      "Version": "1.0.7",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "36f1ae62f026c8ba9f9b5c9a08c03297"
+    },
+    "egg": {
+      "Package": "egg",
+      "Version": "0.4.5",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "d958917f7b60c13089ab0c8d17114053"
+    },
+    "ellipsis": {
+      "Package": "ellipsis",
+      "Version": "0.3.2",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "bb0eec2fe32e88d9e2836c2f73ea2077"
+    },
+    "evaluate": {
+      "Package": "evaluate",
+      "Version": "0.14",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "ec8ca05cffcc70569eaaad8469d2a3a7"
+    },
+    "expm": {
+      "Package": "expm",
+      "Version": "0.999-4",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "d4e0e839218ca1fa869f807b8668576e"
+    },
+    "fansi": {
+      "Package": "fansi",
+      "Version": "0.5.0",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "d447b40982c576a72b779f0a3b3da227"
+    },
+    "farver": {
+      "Package": "farver",
+      "Version": "2.1.0",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "c98eb5133d9cb9e1622b8691487f11bb"
+    },
+    "fastmap": {
+      "Package": "fastmap",
+      "Version": "1.0.1",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "83ab58a0518afe3d17e41da01af13b60"
+    },
+    "forcats": {
+      "Package": "forcats",
+      "Version": "0.5.1",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "81c3244cab67468aac4c60550832655d"
+    },
+    "foreign": {
+      "Package": "foreign",
+      "Version": "0.8-70",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "3d11f0b67c9c71cd3fde607063f70635"
+    },
+    "fs": {
+      "Package": "fs",
+      "Version": "1.5.0",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "44594a07a42e5f91fac9f93fda6d0109"
+    },
+    "generics": {
+      "Package": "generics",
+      "Version": "0.1.0",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "4d243a9c10b00589889fe32314ffd902"
+    },
+    "ggplot2": {
+      "Package": "ggplot2",
+      "Version": "3.3.5",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "d7566c471c7b17e095dd023b9ef155ad"
+    },
+    "glue": {
+      "Package": "glue",
+      "Version": "1.4.2",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "6efd734b14c6471cfe443345f3e35e29"
+    },
+    "gridExtra": {
+      "Package": "gridExtra",
+      "Version": "2.3",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "7d7f283939f563670a697165b2cf5560"
+    },
+    "gtable": {
+      "Package": "gtable",
+      "Version": "0.3.0",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "ac5c6baf7822ce8732b343f14c072c4d"
+    },
+    "highr": {
+      "Package": "highr",
+      "Version": "0.9",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "8eb36c8125038e648e5d111c0d7b2ed4"
+    },
+    "htmltools": {
+      "Package": "htmltools",
+      "Version": "0.5.1.1",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "af2c2531e55df5cf230c4b5444fc973c"
+    },
+    "httpuv": {
+      "Package": "httpuv",
+      "Version": "1.6.1",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "54344a78aae37bc6ef39b1240969df8e"
+    },
+    "isoband": {
+      "Package": "isoband",
+      "Version": "0.2.5",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "7ab57a6de7f48a8dc84910d1eca42883"
+    },
+    "jquerylib": {
+      "Package": "jquerylib",
+      "Version": "0.1.4",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "5aab57a3bd297eee1c1d862735972182"
+    },
+    "jsonlite": {
+      "Package": "jsonlite",
+      "Version": "1.7.2",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "98138e0994d41508c7a6b84a0600cfcb"
+    },
+    "knitr": {
+      "Package": "knitr",
+      "Version": "1.33",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "0bc1b5da1b0eb07cd4b727e95e9ff0b8"
+    },
+    "labeling": {
+      "Package": "labeling",
+      "Version": "0.4.2",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "3d5108641f47470611a32d0bdf357a72"
+    },
+    "later": {
+      "Package": "later",
+      "Version": "1.2.0",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "b61890ae77fea19fc8acadd25db70aa4"
+    },
+    "lattice": {
+      "Package": "lattice",
+      "Version": "0.20-35",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "10a22a9a66fbe7944e9ef98985d7c927"
+    },
+    "lifecycle": {
+      "Package": "lifecycle",
+      "Version": "1.0.0",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "3471fb65971f1a7b2d4ae7848cf2db8d"
+    },
+    "magrittr": {
+      "Package": "magrittr",
+      "Version": "2.0.1",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "41287f1ac7d28a92f0a286ed507928d3"
+    },
+    "manipulate": {
+      "Package": "manipulate",
+      "Version": "1.0.1",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "1058d8feeed787a4b005f66014e4272d"
+    },
+    "markdown": {
+      "Package": "markdown",
+      "Version": "1.1",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "61e4a10781dd00d7d81dd06ca9b94e95"
+    },
+    "mgcv": {
+      "Package": "mgcv",
+      "Version": "1.8-24",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "b71c00b21c099b3f4beca9d784ad7ec4"
+    },
+    "mime": {
+      "Package": "mime",
+      "Version": "0.11",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "8974a907200fc9948d636fe7d85ca9fb"
+    },
+    "munsell": {
+      "Package": "munsell",
+      "Version": "0.5.0",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "6dfe8bf774944bd5595785e3229d8771"
+    },
+    "mvtnorm": {
+      "Package": "mvtnorm",
+      "Version": "1.0-11",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "fc2710274a168072900ab6ce44bc3b25"
+    },
+    "nlme": {
+      "Package": "nlme",
+      "Version": "3.1-137",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "4320ab595f7bbff5458bc6a044a57fc0"
+    },
+    "pillar": {
+      "Package": "pillar",
+      "Version": "1.6.2",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "43f228eb4b49093d1c8a5c93cae9efe9"
+    },
+    "pkgconfig": {
+      "Package": "pkgconfig",
+      "Version": "2.0.3",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "01f28d4278f15c76cddbea05899c5d6f"
+    },
+    "pkgload": {
+      "Package": "pkgload",
+      "Version": "1.2.1",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "463642747f81879e6752485aefb831cf"
+    },
+    "praise": {
+      "Package": "praise",
+      "Version": "1.0.0",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "a555924add98c99d2f411e37e7d25e9f"
+    },
+    "processx": {
+      "Package": "processx",
+      "Version": "3.5.2",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "0cbca2bc4d16525d009c4dbba156b37c"
+    },
+    "promises": {
+      "Package": "promises",
+      "Version": "1.2.0.1",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "4ab2c43adb4d4699cf3690acd378d75d"
+    },
+    "ps": {
+      "Package": "ps",
+      "Version": "1.6.0",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "32620e2001c1dce1af49c49dccbb9420"
+    },
+    "purrr": {
+      "Package": "purrr",
+      "Version": "0.3.4",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "97def703420c8ab10d8f0e6c72101e02"
+    },
+    "quadprog": {
+      "Package": "quadprog",
+      "Version": "1.5-8",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "5f919ae5e7f83a6f91dcf2288943370d"
+    },
+    "rappdirs": {
+      "Package": "rappdirs",
+      "Version": "0.3.1",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "8c8298583adbbe76f3c2220eef71bebc"
+    },
+    "rematch2": {
+      "Package": "rematch2",
+      "Version": "2.1.2",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "76c9e04c712a05848ae7a23d2f170a40"
+    },
+    "renv": {
+      "Package": "renv",
+      "Version": "0.14.0",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "30e5eba91b67f7f4d75d31de14bbfbdc"
+    },
+    "rlang": {
+      "Package": "rlang",
+      "Version": "0.4.11",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "515f341d3affe0de9e4a7f762efb0456"
+    },
+    "rmarkdown": {
+      "Package": "rmarkdown",
+      "Version": "2.10",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "1fb097f233ee98968f8e5d0bcd42df6d"
+    },
+    "rprojroot": {
+      "Package": "rprojroot",
+      "Version": "2.0.2",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "249d8cd1e74a8f6a26194a91b47f21d1"
+    },
+    "rstudioapi": {
+      "Package": "rstudioapi",
+      "Version": "0.13",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "06c85365a03fdaf699966cc1d3cf53ea"
+    },
+    "sass": {
+      "Package": "sass",
+      "Version": "0.4.0",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "50cf822feb64bb3977bda0b7091be623"
+    },
+    "scales": {
+      "Package": "scales",
+      "Version": "1.1.1",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "6f76f71042411426ec8df6c54f34e6dd"
+    },
+    "shiny": {
+      "Package": "shiny",
+      "Version": "1.6.0",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "6e3b6ae7fe02b5859e4bb277f218b8ae"
+    },
+    "sourcetools": {
+      "Package": "sourcetools",
+      "Version": "0.1.7",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "947e4e02a79effa5d512473e10f41797"
+    },
+    "stringi": {
+      "Package": "stringi",
+      "Version": "1.7.3",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "7943cfae120c77a255025e5f63856532"
+    },
+    "stringr": {
+      "Package": "stringr",
+      "Version": "1.4.0",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "0759e6b6c0957edb1311028a49a35e76"
+    },
+    "testthat": {
+      "Package": "testthat",
+      "Version": "3.0.4",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "575216c9946ca70016c3ffb9c31709ba"
+    },
+    "tibble": {
+      "Package": "tibble",
+      "Version": "3.1.3",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "038455513fde65e79c25e724e0c84ca2"
+    },
+    "tidyr": {
+      "Package": "tidyr",
+      "Version": "1.1.3",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "450d7dfaedde58e28586b854eeece4fa"
+    },
+    "tidyselect": {
+      "Package": "tidyselect",
+      "Version": "1.1.1",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "7243004a708d06d4716717fa1ff5b2fe"
+    },
+    "tinytex": {
+      "Package": "tinytex",
+      "Version": "0.32",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "db9a6f2cf147751322d22c9f6647c7bd"
+    },
+    "utf8": {
+      "Package": "utf8",
+      "Version": "1.2.2",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "c9c462b759a5cc844ae25b5942654d13"
+    },
+    "vctrs": {
+      "Package": "vctrs",
+      "Version": "0.3.8",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "ecf749a1b39ea72bd9b51b76292261f1"
+    },
+    "viridisLite": {
+      "Package": "viridisLite",
+      "Version": "0.4.0",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "55e157e2aa88161bdb0754218470d204"
+    },
+    "waldo": {
+      "Package": "waldo",
+      "Version": "0.2.5",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "20c45f1d511a3f730b7b469f4d11e104"
+    },
+    "withr": {
+      "Package": "withr",
+      "Version": "2.4.2",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "ad03909b44677f930fa156d47d7a3aeb"
+    },
+    "xfun": {
+      "Package": "xfun",
+      "Version": "0.24",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "88cdb9779a657ad80ad942245fffba31"
+    },
+    "xtable": {
+      "Package": "xtable",
+      "Version": "1.8-4",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "b8acdf8af494d9ec19ccb2481a9b11c2"
+    },
+    "yaml": {
+      "Package": "yaml",
+      "Version": "2.2.1",
+      "Source": "Repository",
+      "Repository": "https://mran.microsoft.com/snapshot/2021-09-17",
+      "Hash": "2826c5d9efb0a88f657c7a679c7106db"
+    }
+  }
+}
