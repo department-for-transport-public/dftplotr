@@ -77,7 +77,7 @@ label_number <- function(accuracy = NULL, scale = 1, prefix = "",
     trim,
     ...
   )
-  function(x) number(
+  function(x) scales::number(
     x,
     accuracy = accuracy,
     scale = scale,
