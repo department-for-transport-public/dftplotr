@@ -9,6 +9,7 @@ theme_line_dft(
   base_family = "",
   base_size = 14,
   base_line_size = 2,
+  margin_sizes = c(2, 1, 1, 1),
   accuracy = 1,
   labels = TRUE,
   palette = "main.palette",
@@ -24,6 +25,8 @@ theme_line_dft(
 \item{base_size}{The base font size}
 
 \item{base_line_size}{The base line size}
+
+\item{margin_sizes}{The margin size in cm. Takes a list of the four margins in the order top, right, bottom, left.}
 
 \item{accuracy}{The accuracy of the y-axis, default to 1 for 0 decimal place. 0.1 would give 1 decimal place, 0.01 would give 2 decimal places.}
 

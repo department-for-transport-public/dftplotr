@@ -8,7 +8,8 @@ theme_general_dft(
   legend_position = "bottom",
   base_family = "Arial",
   base_size = 14,
-  base_line_size = 2
+  base_line_size = 2,
+  margin_sizes = c(2, 1, 1, 1)
 )
 }
 \arguments{
@@ -19,6 +20,8 @@ theme_general_dft(
 \item{base_size}{The base font size}
 
 \item{base_line_size}{The base line size}
+
+\item{margin_sizes}{The margin size in cm. Takes a list of the four margins in the order top, right, bottom, left.}
 }
 \description{
 Applies a standardised DfT theme to a ggplot.
