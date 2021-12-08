@@ -1,6 +1,8 @@
 # Evaluates all arguments (see #81)
 force_all <- function(...) list(...)
 
+"%||%" <- function(a, b) if (!is.null(a)) a else b
+
 range_finite <- function(x) {
   suppressWarnings(range(x, na.rm = TRUE, finite = TRUE))
 }
@@ -104,7 +106,7 @@ number <- function(x, accuracy = NULL, scale = 1, prefix = "",
                    trim = TRUE, ...) {
   if (length(x) == 0) return(character())
   accuracy <- accuracy %||% precision(x * scale)
-  x <- round_any(x, accuracy / scale)
+  x <- plyr::round_any(x, accuracy / scale)
   nsmall <- -floor(log10(accuracy))
   nsmall <- min(max(nsmall, 0), 20)
 
