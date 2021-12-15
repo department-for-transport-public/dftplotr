@@ -190,7 +190,9 @@ theme_line_dft <- function(legend_position = "bottom",
 
   ##Turn off labelling if required
   if(labels == TRUE){
-    theme_list <- c(theme_list, directlabels::geom_dl(method = list(dl.trans(x = x * 1.02), "last.points", 'last.bumpup')))
+    theme_list <- c(theme_list,
+                    directlabels::geom_dl(method = list(
+                      directlabels::dl.trans(x = x * 1.02), "last.points", 'last.bumpup')))
   }
 
   return(theme_list)
