@@ -10,6 +10,7 @@ Depends: data.table,
          dichromat,
          ggplot2,   
          shiny,
+         plyr,
          scales,
          directlabels
 License: What license is it under?
