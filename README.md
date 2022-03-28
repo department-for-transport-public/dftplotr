@@ -5,14 +5,10 @@ dftplotR is an R package to provide standardised charts formatting in ggplot2. I
 
 ## Installation
 
-The package can be installed directly from Github if you're **not on a network laptop**, using the devtools `install_github` call
+The package can be installed directly from Github using the remotes `install_github` call
 
-    install.packages("devtools")
-    devtools::install_github("departmentfortransport/dftplotr")
-
-It can also be installed on Citrix or a local laptop from our new folder This folder will be kept up to date with the latest live version on Github so you can always have the most recent functions.
-
-    install.packages('//virago.internal.dtlr.gov.uk/data/AFP/IHACAll/IHAC/002 Resources/010 R Programming Language/0001 Packages/dftplotr.zip', repos = NULL, type = "win.binary")
+    install.packages("remotes")
+    remotes::install_github("departmentfortransport/dftplotr")
 
 ## Overview
 
