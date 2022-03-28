@@ -62,27 +62,27 @@ dft.colours <- c(
 
 dft.palettes <- list(
   main.palette = extract_colours(
-    "CorporateGreen", "Lime60", "NavyBlue", "Orange80"
+    "CorporateGreen", "Lime60", "NavyBlue60", "Orange60"
   ),
 
   electric.brights = extract_colours(
-    "CorporateGreen", "Lime", "NavyBlue", "Orange"
+    "CorporateGreen", "Lime", "SkyBlueShade", "Orange", "Charcoal"
   ),
 
   just.beachy = extract_colours(
-    "Orange", "NavyBlueShade", "Yellow80", "DarkGrey", "Mint40"
+    "Orange", "NavyBlueShade", "YellowShade", "DarkGrey", "Mint80"
   ),
 
   cycling.hills = extract_colours(
-    "Green", "Charcoal", "CorporateGreen40", "CorporateGreenShade", "Lime40"
+    "Green", "Charcoal", "CorporateGreen40", "CorporateGreenShade", "Lime60"
   ),
 
   mountain.train = extract_colours(
-    "RedShade", "Yellow80", "NavyBlue80", "Orange80", "Charcoal", "MintShade"
+    "RedShade", "YellowShade", "NavyBlue80", "Orange80", "Charcoal", "MintShade"
   ),
 
   clear.skies = extract_colours(
-    "NavyBlue", "Mint40", "NavyBlue60", "Yellow80", "SkyBlueShade", "Lime60"
+    "NavyBlue", "Mint60", "NavyBlue60", "YellowShade", "SkyBlueShade", "Lime60"
   )
 )
 
