@@ -186,7 +186,7 @@ theme_line_dft <- function(legend_position = "bottom",
                                 labels = label_number(accuracy = accuracy)),
     ggplot2::expand_limits(y = 0),
     ggplot2::coord_cartesian(clip = 'off'),
-    ggplot2::theme(legend.position = 'none'))
+    ggplot2::theme(legend.position = legend_position))
 
   ##Turn off labelling if required
   if(labels == TRUE){
