@@ -55,10 +55,9 @@ dft.colours <- c(
   "LightGrey" = "#EEF1F2")
 
 #' Colour palettes
-#'
-#' Individual palettes returning 4 hex codes each
 #' @export
-#' @noRd
+#' @name dft.palettes
+#' @title Named hex colour palettes using DfT colours
 
 dft.palettes <- list(
   main.palette = extract_colours(
@@ -90,7 +89,8 @@ dft.palettes <- list(
 #'
 #' Individual palettes returning 10 hex codes for a single shade gradient
 #' @export
-#' @noRd
+#' @name dft.gradients
+#' @title List of start and end colours for DfT gradient palettes
 
 dft.gradients <- list(
   main.palette = extract_colours(

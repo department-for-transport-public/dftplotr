@@ -1,9 +1,11 @@
 Package: dftplotr
 Type: Package
 Title: Functions to produce charts in the DfT style
-Version: 0.1.4
-Author: Francesca Bryden
-Maintainer: Francesca Bryden <francesca.bryden@dft.gov.uk>
+Version: 0.1.5
+Authors@R: 
+    c(
+    person("Linda", "Bennett", , "linda.bennett@dft.gov.uk", role = c("aut")),
+    person("Francesca", "Bryden", , "francesca.bryden@dft.gov.uk", role = c("aut", "cre")))
 Description: Functions to produce charts in the DfT style
 Depends: data.table,
          DescTools,
@@ -15,10 +17,10 @@ Depends: data.table,
          directlabels,
          dplyr,
          forcats
-License: What license is it under?
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.1
+RoxygenNote: 7.2.3
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3

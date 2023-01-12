@@ -30,9 +30,7 @@ number(
 formatting. This is useful if the underlying data is very small or very
 large.}
 
-\item{prefix}{Symbols to display before and after value.}
-
-\item{suffix}{Symbols to display before and after value.}
+\item{prefix, suffix}{Symbols to display before and after value.}
 
 \item{big.mark}{Character used between every 3 digits to separate thousands.}
 

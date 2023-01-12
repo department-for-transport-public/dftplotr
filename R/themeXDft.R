@@ -164,7 +164,7 @@ theme_bar_dft <- function(legend_position = "bottom",
 
 
 
-theme_line_dft <- function(legend_position = "bottom",
+theme_line_dft <- function(legend_position = "none",
                            base_family = "",
                            base_size = 14,
                            base_line_size = 2,

@@ -5,7 +5,7 @@
 \title{Applies a standardised DfT theme to a ggplot line plot}
 \usage{
 theme_line_dft(
-  legend_position = "bottom",
+  legend_position = "none",
   base_family = "",
   base_size = 14,
   base_line_size = 2,
