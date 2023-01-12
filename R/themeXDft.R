@@ -4,6 +4,7 @@
 #'
 #' @export
 #' @name theme_general_dft
+#' @import ggplot2
 #' @param legend_position the desired legend position. Selects bottom by default.
 #' @param base_family Font family
 #' @param base_size The base font size
@@ -80,6 +81,7 @@ theme_general_dft <-  function(legend_position = "bottom",
 #'
 #' @export
 #' @name theme_bar_dft
+#' @import ggplot2
 #' @param legend_position the desired legend position. Selects bottom by default.
 #' @param base_family Font family
 #' @param base_size The base font size
@@ -128,11 +130,11 @@ theme_bar_dft <- function(legend_position = "bottom",
       )
   }else{
   list(
-    dftplotr::theme_general_dft(legend_position = legend_position,
-                                base_family = base_family,
-                                base_size = base_size,
-                                base_line_size = base_line_size),
-    dftplotr:::scale_fill_dft(palette = palette),
+    theme_general_dft(legend_position = legend_position,
+                      base_family = base_family,
+                      base_size = base_size,
+                      base_line_size = base_line_size),
+    scale_fill_dft(palette = palette),
     ggplot2::scale_y_continuous(expand = c(0, 0),
                                 labels = label_number(accuracy = accuracy))
     )
@@ -146,6 +148,8 @@ theme_bar_dft <- function(legend_position = "bottom",
 #'
 #' @export
 #' @name theme_line_dft
+#' @import ggplot2
+#' @importFrom directlabels geom_dl dl.trans
 #' @param legend_position the desired legend position. Selects bottom by default.
 #' @param base_family Font family
 #' @param base_size The base font size

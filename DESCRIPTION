@@ -6,8 +6,8 @@ Authors@R:
     c(
     person("Linda", "Bennett", , "linda.bennett@dft.gov.uk", role = c("aut")),
     person("Francesca", "Bryden", , "francesca.bryden@dft.gov.uk", role = c("aut", "cre")))
-Description: Functions to produce charts in the DfT style
-Depends: data.table,
+Description: Functions to produce accessible charts with DfT style and palettes.
+Imports: data.table,
          DescTools,
          dichromat,
          ggplot2,   
@@ -15,8 +15,8 @@ Depends: data.table,
          plyr,
          scales,
          directlabels,
-         dplyr,
-         forcats
+         forcats, 
+         rlang
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

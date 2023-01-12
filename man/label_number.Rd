@@ -62,19 +62,3 @@ that inserts a comma every three digits.
 `label_number()` and `label_comma()` instead.
 }
 
-\examples{
-demo_continuous(c(-1e6, 1e6))
-demo_continuous(c(-1e6, 1e6), labels = label_number())
-demo_continuous(c(-1e6, 1e6), labels = label_comma())
-
-# Use scale to rescale very small or large numbers to generate
-# more readable labels
-demo_continuous(c(0, 1e6), labels = label_number())
-demo_continuous(c(0, 1e6), labels = label_number(scale = 1 / 1e3))
-demo_continuous(c(0, 1e-6), labels = label_number())
-demo_continuous(c(0, 1e-6), labels = label_number(scale = 1e6))
-
-# You can use prefix and suffix for other types of display
-demo_continuous(c(32, 212), label = label_number(suffix = "\u00b0F"))
-demo_continuous(c(0, 100), label = label_number(suffix = "\u00b0C"))
-}
