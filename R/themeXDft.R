@@ -159,15 +159,14 @@ theme_bar_dft <- function(legend_position = "bottom",
 #' @param palette The name of the DfT palette you want to use
 #' @param gradient Boolean response whether to use gradient palette instead of standard palettes. Defaults to false.
 #' @param labels Booleans reponse whether to directly label lines on the chart. Defaults to TRUE
-#' @param nudge_x numeric quantity to move labels on x axis
-#' @param nudge_y numeric quantity to move labels on y axis
+#' @param label_size numeric quantity to set size of font
+#' @param label_nudge numeric quantity to move labels to the right (greater than 1) or left (less than 1)
 #' @param ... Other arguments to pass to extract gradients function
 #' @title Applies a standardised DfT theme to a ggplot line plot
 #' @example man/examples/theme_line_dft.R
 #' @example man/examples/theme_line_dft_palette.R
 #' @example man/examples/theme_line_dft_gradient.R
 #'
-
 
 
 theme_line_dft <- function(legend_position = "none",
@@ -179,8 +178,8 @@ theme_line_dft <- function(legend_position = "none",
                            labels = TRUE,
                            palette = "main.palette",
                            gradient = FALSE,
-                           nudge_x = 0,
-                           nudge_y = 0,
+                           label_size = 0.8,
+                           label_nudge = 1,
                            ...){
 
   theme_list <- list(
@@ -191,7 +190,7 @@ theme_line_dft <- function(legend_position = "none",
                                 margin_sizes = margin_sizes),
     dftplotr::scale_colour_dft(palette = palette, gradient = gradient, ...),
     ggplot2::scale_y_continuous(expand = c(0, 0),
-                                labels = label_number(accuracy = accuracy)),
+                                labels = dftplotr:::label_number(accuracy = accuracy)),
     ggplot2::expand_limits(y = 0),
     ggplot2::coord_cartesian(clip = 'off'),
     ggplot2::theme(legend.position = legend_position))
@@ -200,13 +199,14 @@ theme_line_dft <- function(legend_position = "none",
   if(labels == TRUE){
 
     theme_list <- c(theme_list,
-                    directlabels::geom_dl(method = list(
-                      "last.points", 'last.bumpup',
-                      hjust = (nudge_x * -1),
-                      vjust = (nudge_y * -1))
-                     ))
+                    directlabels::geom_dl(aes(label_nudge = label_nudge),
+                                          method = list(
+                                            "last.qp",  directlabels::dl.trans(x = x * label_nudge),
+                                            cex=label_size)
+                    ))
   }
 
   return(theme_list)
 
 }
+

@@ -14,8 +14,8 @@ theme_line_dft(
   labels = TRUE,
   palette = "main.palette",
   gradient = FALSE,
-  nudge_x = 0,
-  nudge_y = 0,
+  label_size = 0.8,
+  label_nudge = 1,
   ...
 )
 }
@@ -38,9 +38,9 @@ theme_line_dft(
 
 \item{gradient}{Boolean response whether to use gradient palette instead of standard palettes. Defaults to false.}
 
-\item{nudge_x}{numeric quantity to move labels on x axis}
+\item{label_size}{numeric quantity to set size of font}
 
-\item{nudge_y}{numeric quantity to move labels on y axis}
+\item{label_nudge}{numeric quantity to move labels to the right (greater than 1) or left (less than 1)}
 
 \item{...}{Other arguments to pass to extract gradients function}
 }
