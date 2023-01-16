@@ -1,7 +1,7 @@
 Package: dftplotr
 Type: Package
 Title: Functions to produce charts in the DfT style
-Version: 0.1.6
+Version: 0.1.7
 Authors@R: 
     c(
     person("Linda", "Bennett", , "linda.bennett@dft.gov.uk", role = c("aut")),
