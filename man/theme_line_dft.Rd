@@ -14,6 +14,8 @@ theme_line_dft(
   labels = TRUE,
   palette = "main.palette",
   gradient = FALSE,
+  nudge_x = 0,
+  nudge_y = 0,
   ...
 )
 }
@@ -35,6 +37,10 @@ theme_line_dft(
 \item{palette}{The name of the DfT palette you want to use}
 
 \item{gradient}{Boolean response whether to use gradient palette instead of standard palettes. Defaults to false.}
+
+\item{nudge_x}{numeric quantity to move labels on x axis}
+
+\item{nudge_y}{numeric quantity to move labels on y axis}
 
 \item{...}{Other arguments to pass to extract gradients function}
 }

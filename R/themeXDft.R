@@ -149,7 +149,7 @@ theme_bar_dft <- function(legend_position = "bottom",
 #' @export
 #' @name theme_line_dft
 #' @import ggplot2
-#' @importFrom directlabels geom_dl dl.trans
+#' @importFrom directlabels geom_dl
 #' @param legend_position the desired legend position. Selects bottom by default.
 #' @param base_family Font family
 #' @param base_size The base font size
@@ -159,6 +159,8 @@ theme_bar_dft <- function(legend_position = "bottom",
 #' @param palette The name of the DfT palette you want to use
 #' @param gradient Boolean response whether to use gradient palette instead of standard palettes. Defaults to false.
 #' @param labels Booleans reponse whether to directly label lines on the chart. Defaults to TRUE
+#' @param nudge_x numeric quantity to move labels on x axis
+#' @param nudge_y numeric quantity to move labels on y axis
 #' @param ... Other arguments to pass to extract gradients function
 #' @title Applies a standardised DfT theme to a ggplot line plot
 #' @example man/examples/theme_line_dft.R
@@ -177,6 +179,8 @@ theme_line_dft <- function(legend_position = "none",
                            labels = TRUE,
                            palette = "main.palette",
                            gradient = FALSE,
+                           nudge_x = 0,
+                           nudge_y = 0,
                            ...){
 
   theme_list <- list(
@@ -194,9 +198,13 @@ theme_line_dft <- function(legend_position = "none",
 
   ##Turn off labelling if required
   if(labels == TRUE){
+
     theme_list <- c(theme_list,
                     directlabels::geom_dl(method = list(
-                      directlabels::dl.trans(x = x * 1.02), "last.points", 'last.bumpup')))
+                      "last.points", 'last.bumpup',
+                      hjust = (nudge_x * -1),
+                      vjust = (nudge_y * -1))
+                     ))
   }
 
   return(theme_list)
