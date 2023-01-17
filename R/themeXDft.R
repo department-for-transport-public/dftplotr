@@ -149,7 +149,7 @@ theme_bar_dft <- function(legend_position = "bottom",
 #' @export
 #' @name theme_line_dft
 #' @import ggplot2
-#' @importFrom directlabels geom_dl
+#' @importFrom directlabels geom_dl dl.trans
 #' @param legend_position the desired legend position. Selects bottom by default.
 #' @param base_family Font family
 #' @param base_size The base font size
@@ -199,10 +199,10 @@ theme_line_dft <- function(legend_position = "none",
   if(labels == TRUE){
 
     theme_list <- c(theme_list,
-                    directlabels::geom_dl(aes(label_nudge = label_nudge),
+                    suppressWarnings(directlabels::geom_dl(aes(label_nudge = label_nudge),
                                           method = list(
                                             "last.qp",  directlabels::dl.trans(x = x * label_nudge),
-                                            cex=label_size)
+                                            cex=label_size))
                     ))
   }
 
