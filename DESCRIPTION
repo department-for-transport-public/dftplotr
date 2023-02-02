@@ -1,18 +1,13 @@
 Package: dftplotr
 Type: Package
-Title: Functions to produce charts in the DfT style
-Version: 0.1.7
+Title: Functions to Produce Charts in the DfT Style
+Version: 0.2.0
 Authors@R: 
     c(
     person("Linda", "Bennett", , "linda.bennett@dft.gov.uk", role = c("aut")),
     person("Francesca", "Bryden", , "francesca.bryden@dft.gov.uk", role = c("aut", "cre")))
 Description: Functions to produce accessible charts with DfT style and palettes.
-Imports: data.table,
-         DescTools,
-         dichromat,
-         ggplot2,   
-         shiny,
-         plyr,
+Imports: ggplot2,   
          scales,
          directlabels,
          forcats, 
