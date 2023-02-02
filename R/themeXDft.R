@@ -11,7 +11,17 @@
 #' @param base_line_size The base line size
 #' @param margin_sizes The margin size in cm. Takes a list of the four margins in the order top, right, bottom, left.
 #' @title Displays a visual colour chart of a selected palette
-#' @example man/examples/theme_general_dft.R
+#' @examples
+#' \dontrun{
+#'  ## Simple line plot using general theme with default options
+#'  library(ggplot2)
+#'
+#'  df <- economics_long[economics_long$variable %in% c("psavert", "uempmed"), ]
+#'  # plot
+#'  ggplot(df, aes(x=date)) +
+#'    geom_line(aes(y=value, col=variable), size = 1) +
+#'      theme_general_dft()
+#'  }
 #'
 
 theme_general_dft <-  function(legend_position = "bottom",
@@ -190,7 +200,7 @@ theme_line_dft <- function(legend_position = "none",
                                 margin_sizes = margin_sizes),
     dftplotr::scale_colour_dft(palette = palette, gradient = gradient, ...),
     ggplot2::scale_y_continuous(expand = c(0, 0),
-                                labels = dftplotr:::label_number(accuracy = accuracy)),
+                                labels = label_number(accuracy = accuracy)),
     ggplot2::expand_limits(y = 0),
     ggplot2::coord_cartesian(clip = 'off'),
     ggplot2::theme(legend.position = legend_position))
