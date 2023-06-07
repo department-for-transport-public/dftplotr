@@ -9,9 +9,7 @@ Authors@R:
 Description: Functions to produce accessible charts with DfT style and palettes.
 Imports: ggplot2,   
          scales,
-         directlabels,
-         forcats, 
-         rlang
+         directlabels
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

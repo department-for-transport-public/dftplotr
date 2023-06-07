@@ -91,7 +91,7 @@ number <- function(x, accuracy = NULL, scale = 1, prefix = "",
                    trim = TRUE, ...) {
   if (length(x) == 0) return(character())
   accuracy <- accuracy %||% scales:::precision(x * scale)
-  x <- scales:::round_any(x, accuracy / scale)
+  x <- round_any(x, accuracy / scale)
   nsmall <- -floor(log10(accuracy))
   nsmall <- min(max(nsmall, 0), 20)
 
