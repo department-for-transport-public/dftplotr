@@ -159,7 +159,6 @@ theme_bar_dft <- function(legend_position = "bottom",
 #' @export
 #' @name theme_line_dft
 #' @import ggplot2
-#' @importFrom directlabels geom_dl dl.trans
 #' @param legend_position the desired legend position. Selects bottom by default.
 #' @param base_family Font family
 #' @param base_size The base font size
@@ -168,7 +167,7 @@ theme_bar_dft <- function(legend_position = "bottom",
 #' @param accuracy The accuracy of the y-axis, default to 1 for 0 decimal place. 0.1 would give 1 decimal place, 0.01 would give 2 decimal places.
 #' @param palette The name of the DfT palette you want to use
 #' @param gradient Boolean response whether to use gradient palette instead of standard palettes. Defaults to false.
-#' @param labels Booleans reponse whether to directly label lines on the chart. Defaults to TRUE
+#' @param labels Booleans reponse whether to directly label lines on the chart. Defaults to FALSE
 #' @param label_size numeric quantity to set size of font
 #' @param label_nudge numeric quantity to move labels to the right (greater than 1) or left (less than 1)
 #' @param ... Other arguments to pass to extract gradients function
@@ -185,7 +184,7 @@ theme_line_dft <- function(legend_position = "none",
                            base_line_size = 2,
                            margin_sizes = c(2, 1, 1, 1),
                            accuracy = 1,
-                           labels = TRUE,
+                           labels = FALSE,
                            palette = "main.palette",
                            gradient = FALSE,
                            label_size = 0.8,

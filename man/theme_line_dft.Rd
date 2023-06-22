@@ -11,7 +11,7 @@ theme_line_dft(
   base_line_size = 2,
   margin_sizes = c(2, 1, 1, 1),
   accuracy = 1,
-  labels = TRUE,
+  labels = FALSE,
   palette = "main.palette",
   gradient = FALSE,
   label_size = 0.8,
@@ -32,7 +32,7 @@ theme_line_dft(
 
 \item{accuracy}{The accuracy of the y-axis, default to 1 for 0 decimal place. 0.1 would give 1 decimal place, 0.01 would give 2 decimal places.}
 
-\item{labels}{Booleans reponse whether to directly label lines on the chart. Defaults to TRUE}
+\item{labels}{Booleans reponse whether to directly label lines on the chart. Defaults to FALSE}
 
 \item{palette}{The name of the DfT palette you want to use}
 
