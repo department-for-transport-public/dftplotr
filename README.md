@@ -42,10 +42,6 @@ y to 0.
 a ggplot line chart. There are options to pick other dft color palettes.
 This theme also sets the x-axis intercept at y to 0.
 
-`palette_picker_tool`: loads an interactive Shiny dashboard which allows
-users to build their own custom palettes of up to 5 colours using the
-DfT corporate colours.
-
 ## Colour palettes
 
 The dftplotR package comes with 6 pre-loaded palettes. These contain
@@ -108,7 +104,7 @@ The difference between a bar plot without themeing and one with the
 ## Palette picker tool
 
 The palette picker tool is a Shiny tool which is now [available directly
-here](https://rstudio-connect/palette_picker/). This tool allows
+here](https://rstudio-connect/palette_picker/) instead of bundled into the package. This tool allows
 visualisation of all DfT corporate colours in two chart formats; line
 and bar, to allow you to build and visualise your own custom palettes.
 
