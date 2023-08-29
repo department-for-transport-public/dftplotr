@@ -13,7 +13,7 @@ The package can be installed directly from Github using the remotes
 `install_github` call
 
     install.packages("remotes")
-    remotes::install_github("departmentfortransport/dftplotr")
+    remotes::install_github("department-for-transport/dftplotr")
 
 ## Overview
 
