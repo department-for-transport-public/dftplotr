@@ -10,6 +10,8 @@ dft.colours <- c(
   "CorporateGreen60" =  "#66A498",
   "CorporateGreen40" = "#99C3BA",
   "CorporateGreenShade" =  "#004D3B",
+  "CountryGreen" = "#969810",
+  "TransitGreen" = "#3C9F8B",
   "Green" =  "#15B542",
   "Green80" =  "#44C468",
   "Green60" = "#72D38E",
@@ -40,11 +42,17 @@ dft.colours <- c(
   "SkyBlue60" =  "#66B4DF",
   "SkyBlue40" = "#99CDEA",
   "SkyBlueShade" = "#006AB0",
+  "VelocityViolet" = "#4C2C92",
+  "LilacLane" = "#D65AFC",
+  "CherryChariot" = "#8A003E",
+  "PinkCorvette" = "#FF479A",
   "Red" =  "#FF0000",
   "Red80" = "#FF3333",
   "Red60" =  "#FF6666",
   "Red40" = "#FF9999",
   "RedShade" = "#D10000",
+  "CoastalLine" = "#D5811A",
+  "TrafficTango" = "#FE5500",
   "Orange" =  "#FF5500",
   "Orange80" = "#FF7733",
   "Orange60" = "#FF9966",
@@ -82,6 +90,24 @@ dft.palettes <- list(
 
   clear.skies = extract_colours(
     "NavyBlue", "Mint60", "NavyBlue60", "YellowShade", "SkyBlueShade", "Lime60"
+  ),
+
+  travel.direction = extract_colours(
+    "CorporateGreenShade", "TransitGreen", "NavyBlue", "SkyBlue80", "VelocityViolet",
+
+    "LilacLane", "CherryChariot", "PinkCorvette"
+  ),
+
+  country.lane = extract_colours(
+    "CorporateGreenShade", "CountryGreen", "SkyBlue80", "CoastalLine", "CherryChariot",
+
+    "TrafficTango", "VelocityViolet", "LilacLane"
+  ),
+
+  joyful.journey = extract_colours(
+    "TrafficTango", "CherryChariot", "PinkCorvette", "VelocityViolet", "LilacLane",
+
+    "SkyBlue80"
   )
 )
 

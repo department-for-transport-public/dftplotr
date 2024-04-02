@@ -1,11 +1,12 @@
 Package: dftplotr
 Type: Package
 Title: Functions to Produce Charts in the DfT Style
-Version: 0.2.1
+Version: 0.3.0
 Authors@R: 
     c(
     person("Linda", "Bennett", , "linda.bennett@dft.gov.uk", role = c("aut")),
-    person("Francesca", "Bryden", , "francesca.bryden@dft.gov.uk", role = c("aut", "cre")))
+    person("Francesca", "Bryden", , "francesca.bryden@dft.gov.uk", role = c("aut", "cre")),
+    person("Rachel", "Avbulimen", , "rachel.avbulimen@dft.gov.uk", role = c("aut")))
 Description: Functions to produce accessible charts with DfT style and palettes.
 Imports: ggplot2,   
          scales,
@@ -13,7 +14,7 @@ Imports: ggplot2,
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.1
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3

@@ -5,7 +5,7 @@
 \alias{dft.palettes}
 \title{Named hex colour palettes using DfT colours}
 \format{
-An object of class \code{list} of length 6.
+An object of class \code{list} of length 9.
 }
 \usage{
 dft.palettes
